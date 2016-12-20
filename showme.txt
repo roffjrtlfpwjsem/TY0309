@@ -6,5 +6,20 @@ start /d "에디터경로" /b atom.exe(에디터실행파일 또는 다른실행도구들)
 
 .bat 파일로 만들면 자동실행가능
 
-아모레퍼시픽 벤치마킹.
-깔끔하게.
+http://www.amorepacific.com/content/company/ko-kr.html
+http://www.innisfree.co.kr/Main.do?source=https://www.google.co.kr/
+http://www.etude.co.kr/main.do?method=main
+
+3개를 혼합하고싶음.
+
+에뛰드를 반응형으로. 깔끔하고 분홍분홍한 사이트로.
+
+아모레퍼시픽사이트가 벤치마킹할 모양이고 
+
+이니스프리나 에뛰드로 참고하거나.혼합.
+
+이벤트 페이지 예뻐지는중 원스크롤 페이지 생각중....0~100퍼센트의 과정 신제품소개.
+
+
+
+
