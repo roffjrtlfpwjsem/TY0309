@@ -6,10 +6,8 @@ start /d "에디터경로" /b atom.exe(에디터실행파일 또는 다른실행도구들)
 
 .bat 파일로 만들면 자동실행가능
 
-
 http://www.thefaceshop.com/mall/index.jsp
 http://www.brandamorepacific.com/kr/ko/main.html 
-이거 두개 혼합
 
 개인프로젝트 정보
 
@@ -32,6 +30,24 @@ pc버전 1280px
 포인트컬러 #b68957;
 
 
+만들페이지-반응형, 현재 총 13페이지.
+
+index 메인1페이지
+로그인 페이지1
+회원가입 페이지1
+
+브랜드(5페이지)
+- history(히스토리참고)
+- BestSeller(베스트셀러참고)
+- Social activity(spa페이지 참고)
+- find Store(스토어참고)
+- News(테이블코딩만.)
+커뮤니티(5페이지)
+- 뷰티tip(하이라이트 참고)
+- 뷰티qna(상품 참고)
+- 이벤트(메이크업 참고)
+- 포토리뷰(상품 참고)
+- sns라운지(하이라이트 참고)
 
 
 
