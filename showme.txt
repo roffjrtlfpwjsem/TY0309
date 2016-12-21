@@ -6,19 +6,31 @@ start /d "에디터경로" /b atom.exe(에디터실행파일 또는 다른실행도구들)
 
 .bat 파일로 만들면 자동실행가능
 
-http://www.amorepacific.com/content/company/ko-kr.html
-http://www.innisfree.co.kr/Main.do?source=https://www.google.co.kr/
-http://www.etude.co.kr/main.do?method=main
 
-3개를 혼합하고싶음.
+http://www.thefaceshop.com/mall/index.jsp
+http://www.brandamorepacific.com/kr/ko/main.html 
+이거 두개 혼합
 
-에뛰드를 반응형으로. 깔끔하고 분홍분홍한 사이트로.
+개인프로젝트 정보
 
-아모레퍼시픽사이트가 벤치마킹할 모양이고 
+반응형 홈페이지 더페이스샵을 아모레퍼시픽처럼.
+ie8까지 접근성 호환성맞추기,크로스브라우징
 
-이니스프리나 에뛰드로 참고하거나.혼합.
+pc버전 1280px
+태블릿버전(가로) 1024px
+태블릿버전(세로) 860px	
+모바일  540px
 
-이벤트 페이지 예뻐지는중 원스크롤 페이지 생각중....0~100퍼센트의 과정 신제품소개.
+주디자인 더페이스샵
+이미지 글꼴 색상 더페이스샵
+프레임 아모레브랜드샵
+반응형 아모레브랜드샵
+
+서체 나눔고딕
+서체색상 fff
+주배경색 3a322a
+
+
 
 
 
