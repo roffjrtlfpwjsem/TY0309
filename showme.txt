@@ -31,17 +31,17 @@ pc버전 1280px
 gnb컬러 c1c6c5 , cddbb1  호버됫을떄 fff
 
 
-만들페이지-반응형, 현재 총 13페이지.
+만들페이지-반응형, 현재 총 13페이지 작업중,작업완료*
 
-index 메인1페이지
+index 메인1페이지*
 
 로그인 페이지1
 
 회원가입 페이지1
 
 브랜드(5페이지)
-- history(히스토리참고)
-- BestSeller(베스트셀러참고)
+- history(히스토리참고)*
+- BestSeller(베스트셀러참고)*
 - Social activity(spa페이지 참고)
 - find Store(스토어참고)
 - News(테이블코딩만.)
