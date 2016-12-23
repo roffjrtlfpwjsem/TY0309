@@ -42,8 +42,8 @@ index 메인1페이지*
 브랜드(5페이지)
 - history(히스토리참고)*
 - BestSeller(베스트셀러참고)*
-- Social activity(spa페이지 참고)
-- find Store(스토어참고)
+- Social activity(spa페이지 참고)*
+- find Store(스토어참고)*
 - News(테이블코딩만.)
 
 커뮤니티(5페이지)
@@ -58,7 +58,8 @@ index 메인1페이지*
 - 슬라이드
 - top 이동
 - 스크롤에따라 화면이동
-- 
+- 지도api
+- 작은 상자안에 스크롤생기는거
 
 
 
