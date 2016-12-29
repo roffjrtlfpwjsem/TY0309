@@ -1,6 +1,4 @@
 @charset "UTF-8";
-*{margin: 0; padding: 0;}
-*, *:after, *:before{box-sizing: border-box;}
 .grid *[class^="col_"]{float: left;}
 .grid .row:after{
   clear: both;
@@ -49,12 +47,47 @@
 .col_pc_12{
   width: 100%;
 }
-.wrap{
-  max-width: 900px;
-  margin: 0 auto;
+// 가로
+@media (max-width:1024px) {
+  .col_tablet_l_1{
+    width: 8.333%;
+  }
+  .col_tablet_l_2{
+    width: 16.666%;
+  }
+  .col_tablet_l_3{
+    width: 24.999%;
+  }
+  .col_tablet_l_4{
+    width: 33.33%;
+  }
+  .col_tablet_l_5{
+    width: 41.665%;
+  }
+  .col_tablet_l_6{
+    width: 49.998%;
+  }
+  .col_tablet_l_7{
+    width: 58.331%;
+  }
+  .col_tablet_l_8{
+    width: 58.331%;
+  }
+  .col_tablet_l_9{
+    width: 74.997%;
+  }
+  .col_tablet_l_10{
+    width: 83.33%;
+  }
+  .col_tablet_l_11{
+    width: 91.663%;
+  }
+  .col_tablet_l_12{
+    width: 100%;
+  }
 }
-/* 짝수로맞추자 */
-@media (max-width:800px) {
+// 세로
+@media (max-width:860px) {
   .col_tablet_1{
     width: 8.333%;
   }
