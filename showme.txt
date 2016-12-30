@@ -15,7 +15,7 @@ http://www.brandamorepacific.com/kr/ko/main.html
 ie8까지 접근성 호환성맞추기,크로스브라우징
 
 pc버전 1280px
-태블릿버전(가로) 1024px
+태블릿버전(가로) 1180px
 태블릿버전(세로) 860px	
 모바일  480px
 

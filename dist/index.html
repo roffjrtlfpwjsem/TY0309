@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/common.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="css/grid12.css" type="text/css">
   <link rel="shortcut icon" href="images/common/favicon.ico">
   <!--[if lte IE 8]>
@@ -16,10 +17,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" charset="utf-8"></script>
   <script src="js/html5shiv.js" charset="utf-8"></script>
   <script src="js/eventadd.js" charset="utf-8"></script>
+  <script src="js/jquery.bxslider.min.js" charset="utf-8"></script>
   <title>THE FACE SHOP</title>
-  <script type="text/javascript">
-
-  </script>
 </head>
 <body>
 <div id="wrap">
@@ -34,11 +33,11 @@
           <img src="images/common/index_brand.png" alt="브랜드">
         </a>
         <ul class="gnb1">
-          <li><a href="#">history</a></li>
-          <li><a href="#">BestSeller</a></li>
-          <li><a href="#">Social activity</a></li>
-          <li><a href="#">Find Store</a></li>
-          <li><a href="#">News</a></li>
+          <li><a href="history.html">history</a></li>
+          <li><a href="bestseller.html">Best Seller</a></li>
+          <li><a href="social.html">Social activity</a></li>
+          <li><a href="findstore.html">Find Store</a></li>
+          <li><a href="news.html">News</a></li>
         </ul>
       </li>
       <li>
@@ -46,9 +45,9 @@
           <img src="images/common/indexcomm.png" alt="커뮤니티">
         </a>
         <ul class="gnb2">
-          <li><a href="#">TIP</a></li>
-          <li><a href="#">EVENT</a></li>
-          <li><a href="#">SNS</a></li>
+          <li><a href="tip.html">뷰티 TIP</a></li>
+          <li><a href="event.html">이벤트</a></li>
+          <li><a href="sns.html">SNS 라운지</a></li>
         </ul>
       </li>
     </ul>
@@ -61,12 +60,16 @@
     </ul>
   </header>
   <div id="visual">
-    <h2><a href="social.html"><img src="images/common/visual_btn_1.png" alt="더페이스샵나눔이야기"></a></h2>
     <ul class="bxslider clearboth">
-      <li><img src="images/common/visual_img_1.jpg" alt="비주얼사진1"></li>
-      <li><img src="images/common/visual_img_2.jpg" alt="비주얼사진2"></li>
-      <li><img src="images/common/visual_img_3.jpg" alt="비주얼사진3"></li>
-      <li><img src="images/common/visual_img_4.jpg" alt="비주얼사진4"></li>
+      <li>
+        <div class="slideBannerWrap">
+          <img src="images/common/visual_img_1.jpg" width="100%" alt="비주얼사진1">
+          <p><a href="social.html">THE FACE SHOP STORY</a></p>
+        </div>
+      </li>
+      <li><img src="images/common/visual_img_2.jpg" width="100%" alt="비주얼사진2"></li>
+      <li><img src="images/common/visual_img_3.jpg" width="100%" alt="비주얼사진3"></li>
+      <li><img src="images/common/visual_img_4.jpg" width="100%" alt="비주얼사진4"></li>
     </ul>
     <ul class="visual_btn clearboth">
       <li><a href="#"><img src="images/common/indi_v1_on.png" alt="on"></a></li>
@@ -80,17 +83,17 @@
     <h2 class="blind">베스트 셀러</h2>
 <ul class="clearboth">
   <li>
-    <img src="images/common/main_v1.png" alt="치아씨드제품사진">
+    <img src="images/common/main_v1.png" width="100%" alt="치아씨드제품사진">
       <p>치아씨드를 함유한 신제품 출시</p>
         <a href="bestseller.html">VIEW DETAILS</a>
   </li>
   <li>
-    <img src="images/common/main_v2.png" alt="미감수제품사진">
+    <img src="images/common/main_v2.png" width="100%" alt="미감수제품사진">
       <p>수분 흡수와 브라이트닝을<br>책임져줄 미감수 라인 출시</p>
         <a href="bestseller.html">VIEW DETAILS</a>
   </li>
   <li>
-    <img src="images/common/main_v3.png" alt="남성제품사진">
+    <img src="images/common/main_v3.png" width="100%" alt="남성제품사진">
       <p>허브티를 함유한 남성제품 출시</p>
         <a href="bestseller.html">VIEW DETAILS</a>
   </li>
@@ -98,7 +101,7 @@
   </div>
   <div class="ad clearboth">
     <h2 class="blind">광고및 동영상,뉴스</h2>
-<div class="ad_left"><img src="images/common/main2_v1.png" alt="오일블랜딩세럼사진"></div>
+<div class="ad_left"><img src="images/common/main2_v1.png" width="100%" alt="오일블랜딩세럼사진"></div>
 <div class="ad_movie">
   <iframe src="https://www.youtube.com/embed/ulr0muQKjk0?autoplay=0&controls=0&showinfo=0"></iframe>
 </div>
