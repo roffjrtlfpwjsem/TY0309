@@ -51,7 +51,6 @@ caption{
 img,video{
   vertical-align: middle;
   border: none;
-  max-width: 100%;
 }
 a{
   text-decoration: none;
@@ -67,3 +66,343 @@ a{
   display: block;
   clear: both;
 }
+.skipmenu{position: absolute;top: -99px;left: 0;}
+.skipmenu:focus{top:0;}
+// header
+#wrap{
+  width: 1280px;
+  margin: 0 auto;
+}
+#header{
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background: #3a322a;
+  h1{
+    text-align: center;
+    padding-top: 12px;
+  }
+.menu{
+  .gnb2{
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    background: #5d4f48;
+    width: 100px;
+    height: 100px;
+    li{
+      float: none;
+      background: none;
+      a{
+        background: none!important;
+        padding: 0!important;
+        color: #fff;
+      }
+    }
+  }
+  .gnb1{
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #7b6a61;
+    width: 100px;
+    height: 100px;
+    li{  
+      float: none;
+      background: none;
+      a{
+        background: none!important;
+        padding: 0!important;
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+    position: absolute;
+    left: 149px;
+    top: 66px;
+  li{
+    float: left;
+     &:first-child a{
+      padding-right: 30px;
+      background: url(../images/common/sp_bar1.png) right 6px no-repeat;
+    }
+    +li a{padding-left: 30px;}
+  }
+ }
+ .submenu{
+   position: absolute;
+   top: 62px;
+   right: 109px;
+   li{
+     +li+li a{
+       padding-right: 15px;
+       background: url(../images/common/bu_arr_down_4.png) right 10px no-repeat;
+     }
+     +li+li+li a{
+       padding: 0;
+       background:none;
+     }
+     +li+li+li+li a{
+       padding-left: 23px;
+       background: url(../images/common/icon_cart_3.png) 0 7px no-repeat;
+     }
+     margin-left: 15px;
+     float: left;
+     a{
+       color: #fff;
+       font-size: 14px;
+       font-weight: bold;
+     }
+   }
+ }
+}
+// header
+#visual{
+  h2{
+    position: absolute;
+    left: 37%;
+    top: 450px;
+    }
+   position: relative;
+.visual_btn{
+  position: absolute;
+  bottom: 30px;
+  left: 44%;
+  li{
+    float: left;
+  }
+  .mt_4{
+  margin-top: -4px;
+  }
+ }
+}
+#container{
+  margin-top: 50px;
+  ul{
+    margin-left: 35px;
+  }
+  li{
+    position: relative;
+    width: 370px;
+    height: 490px;
+    background: #0c221c;
+    margin-right: 45px;
+    float: left;
+    +li{
+      background: #7b704d;
+      +li{
+        background: #0c221c;
+      }
+    }
+    p{
+      color: #fff;
+      font-size: 22px;
+      padding-top: 80px;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+    a{
+      position: absolute;
+      bottom: 34px;
+      left: 120px;
+      display: block;
+      color: #fff;
+      border: 1px solid #fff;
+      width: 131px;
+      height: 31px;
+      text-align: center;
+      line-height: 28px;
+      font-size: 14px;
+    }
+  }
+}
+.ad{
+  padding-left: 35px;
+  padding-right: 45px;
+  margin-top: 50px;
+  .ad_left{
+    float: left;
+  }
+  .ad_movie{
+    width: 489px;
+    height: 270px;
+    iframe{
+      border: 0;
+      width: 489px;
+      height: 270px;
+    }
+    float: left;
+  }
+  .ad_news{
+    ul{
+      position: relative;
+      float: left;
+      width: 245px;
+      padding-left: 35px;
+      padding-right: 20px;
+      padding-top: 28px;
+      li{
+        color: #422d22;
+        font-size: 14px;
+        font-weight: bold;
+        padding-bottom: 28px;
+        +li{
+          font-weight: normal;
+          font-size: 16px;
+          a{
+            color: #333333;
+          }
+          padding-bottom: 48px;
+          +li{
+            font-size: 12px;
+            padding-bottom: 28px;
+            a{
+              color: black;
+              }
+              +li{
+                color: #666666;
+              }
+          }
+        }
+      }
+    }
+    p{
+      float: left;
+      width: 244px;
+    }
+  }
+}
+.banner{
+  margin-top: 50px;
+  padding-left: 35px;
+  li{
+    p{
+      text-align: center;
+      color: #fff;
+      font-size: 35px;
+      padding-top: 230px;
+      padding-bottom: 35px;
+    }
+    a{
+      display: block;
+      margin: 0 auto;
+      border: 1px solid #fff;
+      width: 131px;
+      height: 31px;
+      color: #fff;
+      font-size: 14px;
+      line-height: 28px;
+      text-align: center;
+    }
+    width: 599px;
+    height: 560px;
+    float: left;
+    background: url(../images/common/banner_1.png) 0 0 no-repeat;
+    +li{
+      width: 602px;
+      background: url(../images/common/banner_2.png) 0 0 no-repeat;
+    }
+  }
+}
+// footer
+#footer{
+  .top{
+    position: absolute;
+    bottom: 40px;
+    right: 167px;
+  }
+  .f_address+p{
+    color: #fff;
+    font-size: 12px;
+    padding-left: 150px;
+  }
+  .f_address{
+    .f_3{
+      li{
+        padding-right: 10px;
+      }
+      strong{
+        font-weight: bold;
+        span{
+          color: #b68957;
+        }
+      }
+      padding-bottom: 15px;
+    }
+    .f_2{
+      padding-bottom: 15px;
+      li{
+        padding-right: 12px;
+      }
+    }
+    .f_1{
+      li{
+        +li+li a{
+          padding-right: 10px;
+          background: url(../images/common/footer_icon_1.png) right 6px no-repeat;
+        }
+        padding-right: 10px;
+        strong{
+          color: #b68957;
+          text-decoration: underline;
+        }
+      }
+    }
+    ul li{
+      float: left;
+      font-size: 12px;
+    }
+    color: #fff;
+    margin-left: 45px;
+    padding-top: 35px;
+    padding-left: 106px;
+    background: url(../images/common/logo_footer_1.png) 0 30px no-repeat;
+  }
+  .f_sns{
+    position: absolute;
+    top: 50px;
+    right: 160px;
+    li{
+      padding-left: 5px;
+      float: left;
+    }
+  }
+  position: relative;
+  width: 100%;
+  background: #3a322a;
+  height: 210px;
+  margin-top: 130px;
+  .f_list{
+    span{
+      color: #b68957;
+      font-weight: bold;
+    }
+    padding-top: 50px;
+    padding-left: 60px;
+    li{
+      +li+li+li+li+li+li+li+li{
+        a{
+          background: url(../images/common/footer_tr.png) right 8px no-repeat;
+          padding-right: 10px;
+        }
+        background: none;
+        margin: 0;
+      }
+      float: left;
+      padding-right: 10px;
+      margin-right: 10px;
+      background: url(../images/common/footer_var.png) right 8px no-repeat;
+      a{
+        color: #fff;
+        font-size: 12px;
+        strong{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+// footer
