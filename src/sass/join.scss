@@ -1,0 +1,117 @@
+@charset "UTF-8";
+.join_wrap{
+  margin-top: 25px;
+  h2{
+    margin-bottom: 85px;
+    padding-right: 70px;
+    text-align: right;
+    font-size: 14px;
+    color: #333333;
+    a{
+      &:first-child{
+        color: #333333;
+      }
+      color: #b68957;
+    }
+  }
+}
+  .join_ing{
+  width: 70.31%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  .on{
+    background: none;
+    color: #6d9811;
+    border-bottom: 3px solid #6d9811;
+  }
+  li{
+    border-bottom: 1px solid #d4d4d7;
+    color: #737373;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+    width: 25%;
+    height: 51px;
+    background: url(../images/join/join_arr.png) left 50% no-repeat;
+    p{
+      font-size: 14px;
+      padding-top: 2px;
+    }
+  }
+}
+.step1{
+ display: block;
+ .join_idc{
+    width: 70.31%;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-bottom: 45px;
+  li{
+      text-align: center;
+    a{
+      display: block;
+      width: 160px;
+      height: 45px;
+      margin: 0 auto;
+      background: #7993b2;
+      color: #fff;
+      text-align: center;
+      line-height: 45px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 35px;
+    }
+    float: left;
+    width: 47%;
+    margin: 0 10px;
+    background: #edf1f7;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    +li{
+      a{
+        margin-top: 43px;
+        background: #a8928d;
+      }
+      background: #f5f0ef;
+    }
+  }
+}
+.join_txt1{
+  width: 70.31%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d4d4d7;
+  margin-bottom: 50px;
+  li{
+    color: #737373;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+dl{
+  width: 70.31%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  dt{
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  dd{
+    color: 737373;
+    font-size: 14px;
+  }
+}
+.join_txt2{
+  width: 70.31%;
+  margin: 0 auto;
+  li{
+    color: #737373;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+}
+}

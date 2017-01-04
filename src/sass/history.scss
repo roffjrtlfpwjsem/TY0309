@@ -1,0 +1,129 @@
+@charset "UTF-8";
+#header .menu .gnb1{
+  display: block;
+}
+.history_wrap{
+  position: relative;
+  padding-left: 190px;
+  margin-top: 86px;
+  h2{
+  margin-bottom: 45px;
+  padding-right: 70px;
+  text-align: right;
+  font-size: 14px;
+  color: #333333;
+  a{
+    &:first-child{
+      color: #333333;
+    }
+    color: #b68957;
+  }
+ }
+}
+.left_year{
+  padding-left: 40px;
+  padding-top: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  li{
+    a{
+      display: block;
+      width: 150px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      color: #b68957;
+      font-size: 18px;
+      &:hover,&:focus{
+        background: #b68957;
+        color: #fff;
+      }
+    }
+  }
+}
+.history_main{
+  padding-right: 80px;
+  dl{
+    +dl{
+      +dl{
+        +dl{
+          +dl{
+            +dl{
+              +dl{
+                +dl{
+                  +dl{
+                    +dl{
+                      +dl{
+                        +dl{
+                          +dl{
+                            padding-bottom: 0;
+                        background: url(../images/history/history_img2015.jpg) right top no-repeat;
+                          }
+                      background: url(../images/history/history_img2014.jpg) right top no-repeat;
+                        }
+                    background: url(../images/history/history_img2013.jpg) right top no-repeat;
+                      }
+                      background: none;
+                    }
+                    background: url(../images/history/history_img2011.jpg) right top no-repeat;
+                  }
+                  background: url(../images/history/history_img2010.jpg) right top no-repeat;
+                }
+                background: url(../images/history/history_img2009.jpg) right top no-repeat;
+              }
+              background: none;
+            }
+      background: url(../images/history/natural_img3.jpg) right top no-repeat;
+          }
+      background: url(../images/history/natural_img8.jpg) right top no-repeat;
+        }
+      background: url(../images/history/history_img2012.jpg) right top no-repeat;
+      }
+      background: url(../images/history/natural_img5.jpg) right top no-repeat;
+      dt:before{
+        content: "";
+        display: block;
+        width: 13px;
+        height: 13px;
+        position: absolute;
+        top: 16px;
+        left: -7px;
+        background: url(../images/history/history_tit_icon.png) 0 0 no-repeat;
+      }
+    }
+    width: 100%;
+    position: relative;
+    padding-left: 30px;
+    margin-left: 20px;
+    padding-bottom: 120px;
+    border-left: 1px solid #dbdbdb;
+    background: url(../images/history/natural_img6.jpg) right top no-repeat;
+    &:first-child {
+      padding-top: 30px;
+      dt:before{
+        content: "";
+        display: block;
+        width: 13px;
+        height: 63px;
+        position: absolute;
+        top: -3px;
+        left: -7px;
+        background: url(../images/history/history_tit_icontop.png) 0 0 no-repeat;
+      }
+    }
+  }
+.color_4e{
+  color: #4e4e4e;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.color_76{
+  text-align: justify;
+  width: 45%;
+  color: #767676;
+  font-size: 16px;
+  line-height: 25px;
+}
+}

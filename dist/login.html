@@ -9,6 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/common.css" type="text/css">
   <link rel="stylesheet" href="css/grid12.css" type="text/css">
+  <link rel="stylesheet" href="css/login.css" type="text/css">
   <link rel="shortcut icon" href="images/common/favicon.ico">
   <!--[if lte IE 8]>
   <link rel="stylesheet" href="css/ie8.css" type="text/css">
@@ -16,17 +17,118 @@
   <script src="js/html5shiv.js" charset="utf-8"></script>
   <script src="js/eventadd.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" charset="utf-8"></script>
-  <title>로그인</title>
+  <title>THE FACE SHOP - 로그인</title>
 </head>
 <body>
-
-  <script type="text/javascript">
-  //<![CDATA[
-function start() {
-  alert("스크립트 로딩완료");
-}
-addEvent(window,"load",start);
-  //]]>
-  </script>
-  </body>
+  <div id="wrap">
+    <div class="skipmenu">
+      <a href="#container">본문바로가기</a>
+    </div>
+    <header id="header">
+      <h1><a href="index.html"><img src="images/common/logo_brand_1.png" alt="더페이스샵로고"></a></h1>
+      <ul class="menu clearboth">
+        <li>
+          <a href="bestseller.html">
+            <img src="images/common/index_brand.png" alt="브랜드">
+          </a>
+          <ul class="gnb1">
+            <li><a href="history.html">history</a></li>
+            <li><a href="bestseller.html">Best Seller</a></li>
+            <li><a href="social.html">Social activity</a></li>
+            <li><a href="findstore.html">Find Store</a></li>
+            <li><a href="news.html">News</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="tip.html">
+            <img src="images/common/indexcomm.png" alt="커뮤니티">
+          </a>
+          <ul class="gnb2">
+            <li><a href="tip.html">뷰티 TIP</a></li>
+            <li><a href="event.html">이벤트</a></li>
+            <li><a href="sns.html">SNS 라운지</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="submenu clearboth">
+        <li><a href="login.html">로그인</a></li>
+        <li><a href="joinintro.html">회원가입</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">멤버십안내</a></li>
+        <li><a href="#">장바구니</a></li>
+      </ul>
+    </header>
+    <div class="login_wrap">
+      <h2><a href="index.html">HOME</a> &gt; <a href="social.html">로그인</a></h2>
+      <p class="login_tit"><span>login</span></p>
+      <p>브랜드 THEFACESHOP 은 아모레퍼시픽 통합 계정으로 이용 가능합니다</p>
+      <div class="login_box">
+        <form action="#" method="post">
+          <fieldset>
+            <legend>로그인</legend>
+            <p class="box1">
+              <input type="text" id="user_id" name="user_id" title="아이디입력" placeholder="아이디">
+              <input type="password" id="user_pw" name="user_pw" title="비밀번호입력">
+              <button>로그인</button>
+            </p>
+            <p class="box2">
+              <input type="checkbox" id="id_ck" title="아이디저장체크박스">
+              <label for="id_ck">아이디저장</label>
+              <a href="#">아이디 / 비밀번호찾기</a>
+            </p>
+          </fieldset>
+        </form>
+      </div>
+      <div>
+        <p>아직 더페이스샵 회원이 아니신가요?</p>
+        <p>신규회원가입을 하시면 다양한 혜택을 만나실 수 있습니다.</p>
+        <a href="joinintro.html">회원가입하기</a>
+      </div>
+    </div>
+    <footer id="footer">
+      <ul class="f_list clearboth">
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+        <li><a href="#">가맹점&#38;특판문의</a></li>
+        <li><a href="#">사이버 신문고</a></li>
+        <li><a href="#">CPS 열린구매</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">사이트맵</a></li>
+        <li><a href="#"><strong>그룹사 임직원 인증</strong></a></li>
+        <li><a href="#"><span>LANGUAGE</span></a></li>
+      </ul>
+      <ul class="f_sns clearboth">
+        <li><a href="#"><img src="images/common/icon_sns_facebook_4.png" alt="페이스북"></a></li>
+        <li><a href="#"><img src="images/common/icon_sns_story_3.png" alt="카카오스토리"></a></li>
+        <li><a href="#"><img src="images/common/icon_sns_post_2.png" alt="포스트"></a></li>
+        <li><a href="#"><img src="images/common/icon_sns_blog_2.png" alt="블로그"></a></li>
+        <li><a href="#"><img src="images/common/icon_sns_youtube_3.png" alt="유튜브"></a></li>
+      </ul>
+     <ul class="f_address">
+       <li>
+         <ul class="f_1 clearboth">
+           <li>사업자등록번호 : 113-81-17562</li>
+           <li>통신판매업신고번호 : 제2011-서울종로-1012호</li>
+           <li><a href="#"><strong>사업자정보확인</strong></a></li>
+         </ul>
+       </li>
+       <li>
+         <ul class="f_2 clearboth">
+           <li>주소 : 서울시 종로구 새문안로 58 LG광화문 빌딩 (03184)</li>
+           <li>대표이사 : 홍동석</li>
+           <li>개인정보보호책임자 : 유정천</li>
+         </ul>
+       </li>
+       <li>
+         <ul class="f_3 clearboth">
+           <li><strong>온라인쇼핑몰 관련문의 : <span>080-855-1600</span></strong></li>
+           <li><strong>매장구매 관련문의 : <span>080-050-3300</span></strong></li>
+         </ul>
+       </li>
+     </ul>
+     <p>COPYRIGHTS&copy;2015 (주)더페이스샵 ALL RIGTH RESERVED.</p>
+     <p class="top"><a href="#"><img src="images/common/btn_top.png" alt="위로가기"></a></p>
+    </footer>
+  </div>
+</body>
 </html>

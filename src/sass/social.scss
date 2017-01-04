@@ -1,0 +1,123 @@
+@charset "UTF-8";
+#header .menu .gnb1{
+  display: block;
+}
+.social_wrap{
+  margin-top: 86px;
+  h2{
+  margin-bottom: 20px;
+  padding-right: 70px;
+  text-align: right;
+  font-size: 14px;
+  color: #333333;
+  a{
+    &:first-child{
+      color: #333333;
+    }
+    color: #b68957;
+  }
+ }
+ .sub_tit{
+   width: 536px;
+   margin: 0 auto;
+   margin-bottom: 60px;
+   li{
+     float: left;
+     .on{
+       background: #b68957;
+       color: #fff;
+       font-weight: bold;
+     }
+     a{
+       display: block;
+       color: #555;
+       width: 268px;
+       height: 43px;
+       border: 1px solid #b68957;
+       line-height: 42px;
+       text-align: center;
+     }
+   }
+ }
+ p{
+   position: relative;
+   width: 76.56%;
+   margin: 0 auto;
+   margin-bottom: 85px;
+   span{
+     display: inline-block;
+     width:30.61%;
+     height: 23.07%;
+     text-align: center;
+     line-height: 52px;
+     position: absolute;
+     top: 15.38%;
+     left: 50%;
+     margin-left: -15.305%;
+     color: #fff;
+     font-size: 20px;
+     background: url(../images/socialactivity/tap1back.png) 0 0 no-repeat;
+   }
+ }
+ .main{
+   width: 76.56%;
+   margin: 0 auto;
+   background: #dcdecc;
+   text-align: center;
+   padding-bottom: 70px;
+   margin-bottom: 75px;
+   h3{
+     +p{
+       +p{
+          color: #555;
+          font-size: 15px;
+          line-height: 25px;
+          padding-bottom: 70px;
+          margin-bottom: 0;
+       }
+       margin-bottom: 0;
+       text-align: center;
+       padding-bottom: 30px;
+     }
+     padding-top: 80px;
+     padding-bottom: 45px;
+   }
+ }
+.main+p{
+  text-align: center;
+ }
+ .tap2{
+   display: none;
+  width: 93.75%;
+  height: 620px;
+  margin: 0 auto;
+  background: url(../images/socialactivity/socialactivity_tap2_vis.png) 0 0 no-repeat;
+  background-size: contain;
+  ul{
+    padding-top: 105px;
+    padding-left: 30px;
+    padding-right: 50px;
+    li{
+      float: left;
+      width: 31.52%;
+      margin-left: 20px;
+      margin-bottom: 30px;
+      a{
+        &:hover,&focus{
+          background: url(../images/socialactivity/tap2_hover_back.png) 0 0 no-repeat;
+          color: #fff;
+          line-height: 130px;
+        }
+        color: #cddbb1;
+        font-size: 30px;
+        text-align: center;
+        line-height: 190px;
+        height: 190px;
+        display:block;
+        background: url(../images/socialactivity/tap2back.png) 0 0 no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+ }
+}
