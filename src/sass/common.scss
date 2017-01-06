@@ -81,17 +81,20 @@ a{
   height: 150px;
   background: #3a322a;
   h1{
+    .tit_2{
+      display: none;
+    }
     text-align: center;
     padding-top: 12px;
   }
 .menu{
   .gnb2{
     display: none;
-    z-index: 10;
+    z-index: 1000;
     position: absolute;
     top: 84px;
-    left: -149px;
-    width: 1280px;
+    left: 0;
+    width: 100%;
     height: 60px;
     background: #729536;
     padding-left: 431px;
@@ -117,15 +120,15 @@ a{
     }
   }
   .gnb1{
-    display: none;
-    z-index: 10;
+    display: none;;
+    z-index: 1000;
     position: absolute;
     top: 84px;
-    left: -149px;
-    width: 1280px;
+    left: 0;
     height: 60px;
+    width: 100%;
     background: #715c49;
-    padding-left: 232px;
+    padding-left: 240px;
     li{
       +li+li+li+li{
         background: none;
@@ -147,8 +150,10 @@ a{
       }
     }
   }
+    padding-left: 150px;
     position: absolute;
-    left: 149px;
+    left: 0;
+    width: 100%;
     top: 66px;
   li{
     float: left;
@@ -162,7 +167,7 @@ a{
  .submenu{
    position: absolute;
    top: 62px;
-   right: 109px;
+   right: 5%;
    li{
      +li+li a{
        padding-right: 15px;
@@ -194,8 +199,8 @@ a{
 #footer{
   .top{
     position: absolute;
-    bottom: 40px;
-    right: 167px;
+    bottom: 20px;
+    right: 45px;
   }
   .f_address+p{
     color: #fff;
@@ -247,7 +252,7 @@ a{
   .f_sns{
     position: absolute;
     top: 50px;
-    right: 160px;
+    right: 45px;
     li{
       padding-left: 5px;
       float: left;
@@ -263,8 +268,7 @@ a{
       color: #b68957;
       font-weight: bold;
     }
-    padding-top: 50px;
-    padding-left: 60px;
+    padding: 50px 30px 0 30px;
     li{
       +li+li+li+li+li+li+li+li{
         a{
@@ -289,12 +293,46 @@ a{
   }
 }
 // footer
-@media (max-width:1180px) {
-#header .menu,#header .submenu,#header h1{
+@media (max-width:1140px) {
+#footer .f_sns{
+ display: none;
+}
+}
+@media (max-width:1024px) {
+#header .submenu,#header h1 .tit_1{
   display: none;
 }
 #header{
   height: 50px;
 }
-
+#header h1 .tit_2{
+  display: block;
+}
+}
+@media (max-width:860px) {
+#footer .f_address .f_1,#footer .f_address .f_2{display: none;}
+#footer .f_address{
+  background: none;
+  padding-left: 30px;
+  margin: 0;
+  padding-top: 15px;
+}
+#footer .f_list{
+  padding-top: 30px;
+}
+#footer .f_address+p{
+ padding: 0 30px;
+}
+}
+@media (max-width:480px){
+ #footer .f_list{
+    display: none;
+  }
+#footer .f_address .f_3{
+  padding-top: 30px;
+  padding-right: 30px;
+}
+#footer .f_address+p{
+  padding-top: 15px;
+}
 }

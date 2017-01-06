@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="Author" content="Galaxy_Legend">
-  <meta name="Keywords" content="&#xAC80;&#xC0C9;&#xB2E8;&#xC5B4;">
-  <meta name="Description" content="&#xAC80;&#xC0C9;&#xB0B4;&#xC6A9;">
+  <meta name="Keywords" content="a">
+  <meta name="Description" content="a">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/common.css" type="text/css">
@@ -19,6 +19,16 @@
   <script src="js/eventadd.js" charset="utf-8"></script>
   <script src="js/jquery.bxslider.min.js" charset="utf-8"></script>
   <title>THE FACE SHOP</title>
+  <script type="text/javascript">
+  $(function () {
+    $(".bxslider").bxSlider({
+      auto:true,
+      autoControls: true,
+      mode: "fade",
+      speed: 1000
+    });
+  });
+  </script>
 </head>
 <body>
 <div id="wrap">
@@ -26,13 +36,20 @@
     <a href="#container">본문바로가기</a>
   </div>
   <header id="header">
-    <h1><a href="index.html"><img src="images/common/logo_brand_1.png" alt="더페이스샵로고"></a></h1>
+    <h1>
+      <a href="index.html" class="tit_1">
+        <img src="images/common/logo_brand_1.png" alt="더페이스샵로고">
+      </a>
+      <a href="index.html" class="tit_2">
+        <img src="images/common/moblietit.png" alt="더페이스샵로고">
+      </a>
+    </h1>
     <ul class="menu clearboth">
       <li>
-        <a href="bestseller.html">
+        <a href="#">
           <img src="images/common/index_brand.png" alt="브랜드">
         </a>
-        <ul class="gnb1">
+        <ul class="gnb1 clearboth">
           <li><a href="history.html">history</a></li>
           <li><a href="bestseller.html">Best Seller</a></li>
           <li><a href="social.html">Social activity</a></li>
@@ -41,10 +58,10 @@
         </ul>
       </li>
       <li>
-        <a href="tip.html">
+        <a href="#">
           <img src="images/common/indexcomm.png" alt="커뮤니티">
         </a>
-        <ul class="gnb2">
+        <ul class="gnb2 clearboth">
           <li><a href="tip.html">뷰티 TIP</a></li>
           <li><a href="event.html">이벤트</a></li>
           <li><a href="sns.html">SNS 라운지</a></li>
@@ -63,47 +80,60 @@
     <ul class="bxslider clearboth">
       <li>
         <div class="slideBannerWrap">
-          <img src="images/common/visual_img_1.jpg" width="100%" alt="비주얼사진1">
+          <img src="images/common/visual_img_1.jpg" alt="비주얼사진1">
           <p><a href="social.html">THE FACE SHOP STORY</a></p>
         </div>
       </li>
-      <li><img src="images/common/visual_img_2.jpg" width="100%" alt="비주얼사진2"></li>
-      <li><img src="images/common/visual_img_3.jpg" width="100%" alt="비주얼사진3"></li>
-      <li><img src="images/common/visual_img_4.jpg" width="100%" alt="비주얼사진4"></li>
-    </ul>
-    <ul class="visual_btn clearboth">
-      <li><a href="#"><img src="images/common/indi_v1_on.png" alt="on"></a></li>
-      <li><a href="#"><img src="images/common/indi_v1.png" alt="off"></a></li>
-      <li><a href="#"><img src="images/common/indi_v1.png" alt="off"></a></li>
-      <li><a href="#"><img src="images/common/indi_v1.png" alt="off"></a></li>
-      <li class="mt_4"><a href="#"><img src="images/common/indi_v1_pause.png" alt="정지"></a></li>
+      <li>
+        <div class="slideBannerWrap">
+          <img src="images/common/visual_img_2.jpg" alt="비주얼사진2">
+          <p><a href="social.html">THE FACE SHOP STORY</a></p>
+        </div>
+      </li>
+      <li>
+        <div class="slideBannerWrap">
+          <img src="images/common/visual_img_3.jpg" alt="비주얼사진3">
+          <p><a href="social.html">THE FACE SHOP STORY</a></p>
+        </div>
+      </li>
+      <li>
+        <div class="slideBannerWrap">
+          <img src="images/common/visual_img_4.jpg" alt="비주얼사진4">
+          <p><a href="social.html">THE FACE SHOP STORY</a></p>
+        </div>
+      </li>
     </ul>
   </div>
   <div id="container">
+    <div class="bestsell">
     <h2 class="blind">베스트 셀러</h2>
 <ul class="clearboth">
   <li>
-    <img src="images/common/main_v1.png" width="100%" alt="치아씨드제품사진">
-      <p>치아씨드를 함유한 신제품 출시</p>
+    <img src="images/common/main_v1.png" alt="치아씨드제품사진">
+      <p>치아씨드를 함유한 신제품 출시
         <a href="bestseller.html">VIEW DETAILS</a>
+      </p>
   </li>
   <li>
-    <img src="images/common/main_v2.png" width="100%" alt="미감수제품사진">
-      <p>수분 흡수와 브라이트닝을<br>책임져줄 미감수 라인 출시</p>
+    <img src="images/common/main_v2.png" alt="미감수제품사진">
+      <p>수분 흡수와 브라이트닝을<br>책임져줄 미감수 라인 출시
         <a href="bestseller.html">VIEW DETAILS</a>
+      </p>
   </li>
   <li>
-    <img src="images/common/main_v3.png" width="100%" alt="남성제품사진">
-      <p>허브티를 함유한 남성제품 출시</p>
+    <img src="images/common/main_v3.png" alt="남성제품사진">
+      <p>허브티를 함유한 남성제품 출시
         <a href="bestseller.html">VIEW DETAILS</a>
+      </p>
   </li>
 </ul>
   </div>
   <div class="ad clearboth">
     <h2 class="blind">광고및 동영상,뉴스</h2>
-<div class="ad_left"><img src="images/common/main2_v1.png" width="100%" alt="오일블랜딩세럼사진"></div>
+<div class="ad_left"><img src="images/common/main2_v1.png" alt="오일블랜딩세럼사진"></div>
+<div class="ad_right">
 <div class="ad_movie">
-  <iframe src="https://www.youtube.com/embed/ulr0muQKjk0?autoplay=0&controls=0&showinfo=0"></iframe>
+  <iframe src="https://www.youtube.com/embed/rSrjDYeK7OA" title="제품광고동영상"></iframe>
 </div>
 <div class="ad_news">
   <ul>
@@ -112,24 +142,28 @@
     <li><a href="news.html">부드러운 생크림 제형으로 바르자마자 촉촉한 보습을 선사, 피부 톤을..</a></li>
     <li>2016.09.12</li>
   </ul>
-  <p>
-    <a href="#"><img src="images/common/slide2_1.jpg" alt="슬라이드사진1"></a>
-  </p>
+    <p><img src="images/common/slide2_1.jpg" alt="슬라이드사진1"></p>
+</div>
 </div>
   </div>
   <div class="banner">
     <h2 class="blind">역사,커뮤니티페이지</h2>
     <ul class="clearboth">
       <li>
-        <p>Brand History</p>
-        <a href="history.html">VIEW DETAILS</a>
+        <img src="images/common/banner_1.png" alt="왼쪽배너사진">
+        <p>Brand History
+          <a href="history.html">VIEW DETAILS</a>
+        </p>
       </li>
       <li>
-        <p>Beauty Community</p>
-        <a href="sns.html">VIEW DETAILS</a>
+        <img src="images/common/banner_2.png" alt="오른쪽배너사진">
+        <p>Beauty Community
+          <a href="sns.html">VIEW DETAILS</a>
+        </p>
       </li>
     </ul>
   </div>
+</div>
   <footer id="footer">
     <ul class="f_list clearboth">
       <li><a href="#">이용약관</a></li>

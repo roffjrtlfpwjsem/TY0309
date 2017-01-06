@@ -42,9 +42,9 @@
 }
 .step1{
  display: block;
+ width: 70.31%;
+ margin: 0 auto;
  .join_idc{
-    width: 70.31%;
-    margin: 0 auto;
     padding: 0 10px;
     margin-bottom: 45px;
   li{
@@ -78,8 +78,6 @@
   }
 }
 .join_txt1{
-  width: 70.31%;
-  margin: 0 auto;
   padding-bottom: 50px;
   border-bottom: 1px solid #d4d4d7;
   margin-bottom: 50px;
@@ -90,8 +88,6 @@
   }
 }
 dl{
-  width: 70.31%;
-  margin: 0 auto;
   padding-bottom: 30px;
   dt{
     color: #333;
@@ -105,13 +101,266 @@ dl{
   }
 }
 .join_txt2{
-  width: 70.31%;
-  margin: 0 auto;
   li{
     color: #737373;
     font-size: 14px;
     font-weight: bold;
     line-height: 20px;
   }
+ }
 }
+.step2{
+  display: block;
+  padding-top: 20px;
+  width: 70.31%;
+  margin: 0 auto;
+  .all_ck{
+    background: #edf1f7;
+    margin-bottom: 25px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: #4e4e4e;
+    font-size: 14px;
+    font-weight: bold;
+        input[type="checkbox"]{
+          display: none;
+        }
+        label{
+          cursor: pointer;
+          padding:2px 30px 2px 0;
+          background: url(../images/join/bg_chkbox.png) right 4px no-repeat;
+        }
+        input[type="checkbox"]:checked + label {
+          background-position-y: -19px;
+        }
+    }
+ div{
+   margin-bottom: 25px;
+   position: relative;
+   .txt_box{
+     height: 150px;
+     overflow-y: scroll;
+     border: 1px solid #dadada;
+     padding: 10px;
+     h4{
+       color: #333;
+       font-size: 16px;
+       font-weight: bold;
+       padding-bottom: 25px;
+     }
+     p{
+       color: #737373;
+       font-size: 14px;
+       padding-bottom: 20px;
+     }
+   }
+   h3{
+     color: #4e4e4e;
+     font-size: 16px;
+     font-weight: bold;
+     margin-bottom: 15px;
+   }
+   .sub_ck_box{
+     position: absolute;
+     top: 0;
+     right: 0;
+     input[type="checkbox"]{
+       display: none;
+     }
+     label{
+       color: #333;
+       font-size: 14px;
+       font-weight: bold;
+       cursor: pointer;
+       padding:2px 30px 2px 0;
+       background: url(../images/join/bg_chkbox.png) right 4px no-repeat;
+     }
+     input[type="checkbox"]:checked + label {
+       background-position-y: -19px;
+     }
+   }
+ }
+ .table_box{
+   padding: 10px;
+   border: 1px solid #dadada;
+   table{
+     border: 1px solid #dfdfdf;
+     thead{
+       tr{
+         border-top: 2px solid #333;
+         th{
+           font-size: 14px;
+           font-weight: bold;
+           height: 30px;
+           background: #f8f8f8;
+           text-align: center;
+         }
+       }
+     }
+     tbody{
+       tr{
+         td{
+           font-size: 14px;
+           color: #737373;
+           text-align: center;
+           height: 80px;
+           border: 1px solid #dfdfdf;
+           padding: 0 10px;
+         }
+       }
+     }
+   }
+   ul{
+     padding: 10px 0;
+     li{
+       font-size: 14px;
+       color: #737373;
+     }
+   }
+ }
+ a{
+   display: block;
+   width: 140px;
+   height: 40px;
+   background: #7993b2;
+   color: #fff;
+   font-size: 16px;
+   line-height: 40px;
+   text-align: center;
+   margin: 0 auto;
+   font-weight: bold;
+   margin-top: 45px;
+ }
+}
+.step3{
+  display: block;
+  padding-top: 20px;
+  width: 70.31%;
+  margin: 0 auto;
+  padding: 0 90px;
+  h3{
+    color: #4e4e4e;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+  p{
+    #user_phone{
+      width: 87.8%;
+    }
+    #user_address_num{
+      width: 73%;
+    }
+    #user_address_num+a{
+      display: inline-block;
+      width: 140px;
+      height: 40px;
+      color: #333;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 40px;
+      text-align: center;
+      background: #edf1f7;
+      vertical-align: middle;
+      margin-left: 4px;
+    }
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 150px;
+    label{
+      position: absolute;
+      top: 9px;
+      left: 0;
+      vertical-align: middle;
+      color: #737373;
+      font-size: 16px;
+    }
+    input[type="text"],input[type="password"]{
+      vertical-align: middle;
+      line-height: 40px;
+      width: 100%;
+      height: 40px;
+      border: 1px solid #ccc;
+    }
+    select{
+      vertical-align: middle;
+      width: 11.11%;
+      height: 40px;
+      border: 1px solid #ccc;
+    }
+    input[type="radio"]{
+      display: none;
+    }
+    input[type="radio"]+label{
+      position: inherit;
+      top: inherit;
+      vertical-align: middle;
+      color: #333;
+      font-size: 16px;
+      cursor: pointer;
+      padding:0 30px 0 20px;
+      background: url(../images/join/bg_raidobox.png) right 2px no-repeat;
+    }
+    input[type="radio"]:checked + label {
+      background-position-y: -18px;
+    }
+  }
+  .mt_60{
+    margin-top: 60px;
+  }
+  .submit{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 60px;
+    button{
+      width: 140px;
+      height: 40px;
+      color: #fff;
+      background: #7993b2;
+      line-height: 40px;
+      border: none;
+      font-weight: bold;
+    }
+  }
+  .ad{
+    padding: 60px 0 0 0;
+    width: 87.55%;
+    margin: 0 auto;
+    span{
+      vertical-align: middle;
+      display: inline-block;
+      color: #4e4e4e;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+.step4{
+  p{
+    +p{
+      padding: 0;
+      padding-top: 45px;
+      +p{
+      padding: 0;
+      padding-top: 30px;
+        a{
+        display: inline-block;
+        width: 140px;
+        height: 40px;
+        color: #fff;
+        line-height: 40px;
+        font-size: 16px;
+        background: #7993b2;
+        font-weight: bold;
+      }
+    }
+  }
+    padding: 35px 30px 15px 0;
+    text-align: center;
+    color: #333;
+    font-size: 26px;
+    font-weight: bold;
+  }
 }
