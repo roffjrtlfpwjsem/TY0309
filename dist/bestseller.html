@@ -17,6 +17,24 @@
   <script src="js/html5shiv.js" charset="utf-8"></script>
   <script src="js/eventadd.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+  $(function () {
+    var init = true;
+    $(".menu_box").on("click",function () {
+      if (init) {
+        $(".menu_box_wrap").css({
+          "display":"block"
+        })
+        init = false;
+      }else {
+        $(".menu_box_wrap").css({
+          "display":"none"
+        })
+        init = true;
+      }
+    })
+  });
+  </script>
   <title>THE FACE SHOP - BestSeller</title>
 </head>
 <body>
@@ -25,13 +43,53 @@
       <a href="#container">본문바로가기</a>
     </div>
     <header id="header">
-      <h1><a href="index.html"><img src="images/common/logo_brand_1.png" alt="더페이스샵로고"></a></h1>
+      <h1>
+        <a href="index.html" class="tit_1">
+          <img src="images/common/logo_brand_1.png" alt="더페이스샵로고">
+        </a>
+        <a href="index.html" class="tit_2">
+          <img src="images/common/moblietit.png" alt="더페이스샵로고">
+        </a>
+      </h1>
+      <a href="#" class="menu_box">모바일메뉴박스</a>
+      <div class="menu_box_wrap">
+        <ul>
+          <li>
+            <p>BRAND</p>
+            <ul>
+              <li><a href="history.html">history</a></li>
+              <li><a href="bestseller.html">Best Seller</a></li>
+              <li><a href="social.html">Social activity</a></li>
+              <li><a href="findstore.html">Find Store</a></li>
+              <li><a href="news.html">News</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>COMMUNITY</p>
+            <ul>
+              <li><a href="tip.html">뷰티 TIP</a></li>
+              <li><a href="event.html">이벤트</a></li>
+              <li><a href="sns.html">SNS 라운지</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>JOIN</p>
+            <ul>
+              <li><a href="login.html">로그인</a></li>
+              <li><a href="joinintro.html">회원가입</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">멤버십안내</a></li>
+              <li><a href="#">장바구니</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <ul class="menu clearboth">
         <li>
-          <a href="bestseller.html">
+          <a href="history.html">
             <img src="images/common/index_brand.png" alt="브랜드">
           </a>
-          <ul class="gnb1">
+          <ul class="gnb1 clearboth">
             <li><a href="history.html">history</a></li>
             <li><a href="bestseller.html">Best Seller</a></li>
             <li><a href="social.html">Social activity</a></li>
@@ -43,7 +101,7 @@
           <a href="tip.html">
             <img src="images/common/indexcomm.png" alt="커뮤니티">
           </a>
-          <ul class="gnb2">
+          <ul class="gnb2 clearboth">
             <li><a href="tip.html">뷰티 TIP</a></li>
             <li><a href="event.html">이벤트</a></li>
             <li><a href="sns.html">SNS 라운지</a></li>
@@ -61,6 +119,7 @@
     <div class="best_wrap">
       <h2><a href="index.html">HOME</a> &gt; BRAND &gt; <a href="bestseller.html">Best Seller</a></h2>
       <div class="best10">
+        <img src="images/bestseller/bestseller_vis.png" alt="best10사진">
         <p>
           <strong>BEST 10</strong>
           <span>꾸준한 사랑을 받고 있는<br>
@@ -131,14 +190,16 @@
           세련된 감성의 자연주의 스킨케어입니다.</p>
           <a href="#">VIEW DETAILS</a>
         </li>
+        <li class="last clearboth">
+            <span><img src="images/bestseller/bestseller_10.png" alt="명한미인도 사진"></span>
+          <div>
+              <img src="images/bestseller/name10.png" alt="명한미인도">
+              <p>‘증(蒸 찌는것)’하고 아홉 번을 ‘포(曝 햇빛에 말리는 것)‘하는
+              ‘구증구포’의 정성을 더한 자연 한방 화장품입니다.</p>
+              <a href="#">VIEW DETAILS</a>
+          </div>
+        </li>
       </ul>
-      <div>
-        <img src="images/bestseller/bestseller_10.png" alt="명한미인도 사진">
-        <img src="images/bestseller/name10.png" alt="명한미인도">
-        <p>‘증(蒸 찌는것)’하고 아홉 번을 ‘포(曝 햇빛에 말리는 것)‘하는
-          ‘구증구포’의 정성을 더한 자연 한방 화장품입니다.</p>
-          <a href="#">VIEW DETAILS</a>
-      </div>
     </div>
     <footer id="footer">
       <ul class="f_list clearboth">

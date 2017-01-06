@@ -42,6 +42,12 @@
         text-align: center;
         color: #737373;
         font-size: 14px;
+        a{
+          display: block;
+          white-space:nowrap;
+          overflow:hidden;
+          text-overflow:ellipsis;
+        }
         a:hover{
           color: #000;
           text-decoration: underline;
@@ -88,6 +94,31 @@
     border: 1px solid #e1e4e8;
     color: #333;
     font-size: 14px;
-    background: url(../images/news/news_icon_sel.png) 118px 14px no-repeat;
+  }
+}
+@media (max-width:860px) {
+  .news_wrap table thead tr th:first-child,
+  .news_wrap table thead tr th+th+th,
+  .news_wrap table tbody tr td:first-child,
+  .news_wrap table tbody tr td+td+td,
+  select{
+    display: none;
+  }
+  .select{
+   width: 250px;
+   input{
+     width: 250px;
+     margin: 0;
+     background: url(../images/news/news_icon_search.png) 225px 9px no-repeat
+   }
+  }
+  table{
+     table-layout: fixed;
+  }
+}
+@media (max-width:480px){
+  .news_wrap h2{
+    text-align:center;
+    padding-right: 0;
   }
 }

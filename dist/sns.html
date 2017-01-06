@@ -17,7 +17,25 @@
   <script src="js/html5shiv.js" charset="utf-8"></script>
   <script src="js/eventadd.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" charset="utf-8"></script>
-  <title>THE FACE SHOP - Tip</title>
+  <script type="text/javascript">
+  $(function () {
+    var init = true;
+    $(".menu_box").on("click",function () {
+      if (init) {
+        $(".menu_box_wrap").css({
+          "display":"block"
+        })
+        init = false;
+      }else {
+        $(".menu_box_wrap").css({
+          "display":"none"
+        })
+        init = true;
+      }
+    })
+  });
+  </script>
+  <title>THE FACE SHOP - SNS</title>
 </head>
 <body>
   <div id="wrap">
@@ -25,13 +43,53 @@
       <a href="#container">본문바로가기</a>
     </div>
     <header id="header">
-      <h1><a href="index.html"><img src="images/common/logo_brand_1.png" alt="더페이스샵로고"></a></h1>
+      <h1>
+        <a href="index.html" class="tit_1">
+          <img src="images/common/logo_brand_1.png" alt="더페이스샵로고">
+        </a>
+        <a href="index.html" class="tit_2">
+          <img src="images/common/moblietit.png" alt="더페이스샵로고">
+        </a>
+      </h1>
+      <a href="#" class="menu_box">모바일메뉴박스</a>
+      <div class="menu_box_wrap">
+        <ul>
+          <li>
+            <p>BRAND</p>
+            <ul>
+              <li><a href="history.html">history</a></li>
+              <li><a href="bestseller.html">Best Seller</a></li>
+              <li><a href="social.html">Social activity</a></li>
+              <li><a href="findstore.html">Find Store</a></li>
+              <li><a href="news.html">News</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>COMMUNITY</p>
+            <ul>
+              <li><a href="tip.html">뷰티 TIP</a></li>
+              <li><a href="event.html">이벤트</a></li>
+              <li><a href="sns.html">SNS 라운지</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>JOIN</p>
+            <ul>
+              <li><a href="login.html">로그인</a></li>
+              <li><a href="joinintro.html">회원가입</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">멤버십안내</a></li>
+              <li><a href="#">장바구니</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <ul class="menu clearboth">
         <li>
-          <a href="bestseller.html">
+          <a href="history.html">
             <img src="images/common/index_brand.png" alt="브랜드">
           </a>
-          <ul class="gnb1">
+          <ul class="gnb1 clearboth">
             <li><a href="history.html">history</a></li>
             <li><a href="bestseller.html">Best Seller</a></li>
             <li><a href="social.html">Social activity</a></li>
@@ -43,7 +101,7 @@
           <a href="tip.html">
             <img src="images/common/indexcomm.png" alt="커뮤니티">
           </a>
-          <ul class="gnb2">
+          <ul class="gnb2 clearboth">
             <li><a href="tip.html">뷰티 TIP</a></li>
             <li><a href="event.html">이벤트</a></li>
             <li><a href="sns.html">SNS 라운지</a></li>
@@ -63,8 +121,7 @@
         <p class="sns_tit"><img src="images/sns/sns_tit.png" alt="sns라운지"></p>
         <ul class="sns_box clearboth">
           <li>
-            <p><span>THE FACE SHOP
-              #INSTARGRAM</span></p>
+            <img src="images/sns/back_instar.png" alt="THE FACE SHOP #INSTARGRAM">
             <a href="#">더페이스샵 인스타그램을 통해 소식을 실시간으로 확인하세요!</a>
           </li>
           <li>
@@ -108,7 +165,7 @@
             <a href="#">요즘 난리난 화장품 #닥터벨머 스킨케어를  만나보세요!</a>
           </li>
           <li>
-            <p>BEAUTY TREND</p>
+            <img src="images/sns/sns_beauty.png" alt="BEAUTY TREND">
             <p class="sns_icon">
                <a href="#"><img src="images/sns/icon_sns_facebook_3_on.png" alt="페이스북"></a>
                <a href="#"><img src="images/sns/icon_sns_story_2_on.png" alt="카카오스토리"></a>
@@ -119,7 +176,7 @@
           </li>
         </ul>
         <p class="more"><a href="#">더보기</a></p>
-      </div>    
+      </div>
     <footer id="footer">
       <ul class="f_list clearboth">
         <li><a href="#">이용약관</a></li>
