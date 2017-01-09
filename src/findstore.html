@@ -146,7 +146,7 @@
         <button>검색</button>
       </p>
       <div class="map clearboth">
-        <div class="map_view"><img src="http://place-hold.it/840X605" alt=""></div>
+<div id="daumRoughmapContainer1483950425777" class="root_daum_roughmap root_daum_roughmap_landing"></div>
           <div class="map_nav">
             <h3>검색된 매장은 <span>12건</span> 입니다.</h3>
             <ul>
@@ -247,5 +247,14 @@
      <p class="top"><a href="#"><img src="images/common/btn_top.png" alt="위로가기"></a></p>
     </footer>
   </div>
+  <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+  <script charset="UTF-8">
+  	new daum.roughmap.Lander({
+  		"timestamp" : "1483950425777",
+  		"key" : "f9um",
+  		"mapWidth" : "100",
+  		"mapHeight" : "600"
+  	}).render();
+  </script>
 </body>
 </html>

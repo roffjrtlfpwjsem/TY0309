@@ -127,3 +127,25 @@
   line-height: 25px;
 }
 }
+@media (max-width:1024px) {
+dl{
+    background: none!important;
+  }
+  .history_main .color_76{width: 100%;}
+}
+
+@media (max-width:860px) {
+.left_year{
+  display: none;
+}
+.history_wrap{
+  padding-left: 10px;
+}
+}
+
+@media (max-width:480px) {
+.history_wrap h2{
+  text-align: center;
+  padding: 0;
+}
+}

@@ -69,16 +69,16 @@
     width: 480px;
     height: 280px;
     float: left;
-    margin-right: 120px;
+    margin-right: 100px;
   }
   img{
     float: left;
-    margin-right: 120px;
+    margin-right: 100px;
   }
   ul{
   li{
     overflow: hidden;
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
     padding-bottom: 120px;
     h3{
@@ -120,15 +120,14 @@
   }
 }
 .tip2_wrap{
-  display: none;
+  display: block;
 ul{
-  padding-left: 15px;
-  padding-right: 40px;
+  padding: 0 25px;
   li{
-    margin-left: 25px;
-    margin-bottom: 50px;
+    padding: 0 15px;
     float: left;
-    width: 21.99%;
+    width: 25%;
+    margin-bottom: 50px;
     a{
       border: 1px solid #e5e5e5;
       span{
@@ -144,4 +143,55 @@ ul{
    }
   }
  }
+}
+@media (max-width:1024px) {
+  .tip_wrap .tip2_wrap ul li{
+    width: 33.33%;
+  }
+.tip_wrap .sub_tit{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  li{
+    width: 50%;
+    a{
+      width: 100%;
+    }
+  }
+}
+.tip_wrap .tip1_wrap ul li h3{
+  padding-bottom: 25px;
+}
+.tip_wrap .tip1_wrap ul li h3+p{
+  padding-bottom: 40px;
+}
+}
+@media (max-width:860px) {
+  .tip_wrap .tip2_wrap ul li{
+    width: 50%;
+  }
+.tip_wrap .tip1_wrap img,.tip_wrap .tip1_wrap iframe{
+  width: 100%;
+  margin: 0;
+  padding-bottom:30px;
+}
+.tip_wrap .tip1_wrap ul li h3 a{
+  font-size: 20px;
+}
+.tip_wrap .tip1_wrap ul li h3,.tip_wrap .tip1_wrap ul li h3+p,
+.tip1_wrap ul li h3+p+p{
+  text-align: center;
+}
+.tip_wrap .tip1_wrap ul li{padding-bottom: 40px;}
+}
+@media (max-width:480px) {
+  .tip_wrap .tip2_wrap ul li{
+    width: 100%;
+  }
+.tip_wrap h2{
+  text-align: center;
+  padding: 0;
+}
 }

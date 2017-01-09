@@ -20,8 +20,8 @@
   margin: 0 auto;
   padding-bottom: 40px;
   .on{
-    background: none;
     color: #6d9811;
+    background: none;
     border-bottom: 3px solid #6d9811;
   }
   li{
@@ -41,7 +41,7 @@
   }
 }
 .step1{
- display: block;
+ display: none;
  width: 70.31%;
  margin: 0 auto;
  .join_idc{
@@ -78,16 +78,19 @@
   }
 }
 .join_txt1{
-  padding-bottom: 50px;
   border-bottom: 1px solid #d4d4d7;
   margin-bottom: 50px;
+  padding: 0 10px 50px 10px;
   li{
+    text-align: justify;
+    padding-bottom: 10px;
     color: #737373;
     font-size: 14px;
     font-weight: bold;
   }
 }
 dl{
+  text-align: justify;
   padding-bottom: 30px;
   dt{
     color: #333;
@@ -102,6 +105,8 @@ dl{
 }
 .join_txt2{
   li{
+    text-align: justify;
+    padding-top: 10px;
     color: #737373;
     font-size: 14px;
     font-weight: bold;
@@ -110,7 +115,7 @@ dl{
  }
 }
 .step2{
-  display: block;
+  display: none;
   padding-top: 20px;
   width: 70.31%;
   margin: 0 auto;
@@ -236,7 +241,7 @@ dl{
 .step3{
   display: block;
   padding-top: 20px;
-  width: 70.31%;
+  width: 80%;
   margin: 0 auto;
   padding: 0 90px;
   h3{
@@ -247,10 +252,10 @@ dl{
   }
   p{
     #user_phone{
-      width: 87.8%;
+      width: 80%;
     }
     #user_address_num{
-      width: 73%;
+      width: 65%;
     }
     #user_address_num+a{
       display: inline-block;
@@ -326,7 +331,7 @@ dl{
   }
   .ad{
     padding: 60px 0 0 0;
-    width: 87.55%;
+    width: 520px;
     margin: 0 auto;
     span{
       vertical-align: middle;
@@ -338,6 +343,7 @@ dl{
   }
 }
 .step4{
+  display: none;
   p{
     +p{
       padding: 0;
@@ -363,4 +369,93 @@ dl{
     font-size: 26px;
     font-weight: bold;
   }
+}
+@media (max-width:1024px) {
+.join_ing{
+  width: 95%;
+}
+.step1 .join_idc li{
+  width: 47%;
+  margin: 0 5px;
+}
+.step1,.step2{
+  width: 95%;
+}
+.step3{
+  width: 95%;
+  padding: 0;
+}
+}
+@media (max-width:860px) {
+  .join_ing li{
+    float: none;
+    width: 100%;
+    background: none;
+    margin-bottom: 10px;
+  }
+  .join_wrap h2{
+    margin-bottom: 35px;
+  }
+  .join_ing{
+    padding-bottom: 10px;
+  }
+  .step4 p{
+    font-size: 22px;
+  }
+  .step3 .ad{
+    width: 100%;
+    text-align: center;
+    span{
+      display: block;
+      width: 100%;
+      padding: 0 20px 20px 20px;
+    }
+  }
+  .step3 p #user_address_num{
+    width: 48%;
+  }
+}
+@media (max-width:480px) {
+.join_wrap h2{
+  text-align: center;
+  padding: 0;
+}
+.step1 .join_idc li{
+width: 100%;
+margin-bottom: 10px;
+}
+.step2 .table_box,.step2 .table_box{
+  min-width: 440px;
+}
+.step4 p{
+  font-size: 16px;
+}
+.step3 p input{
+  display: block;
+}
+.step3 p #user_address_num,.step3 p #user_phone,
+.step3 p #user_address_num+a{
+  width: 100%;
+  margin: 0;
+}
+.step3 p select{
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+.step3 p label{
+  position: inherit;
+  top: inherit;
+  left: inherit;
+  display: block;
+  margin-bottom: 10px;
+}
+.step3 p input[type="radio"]+label{
+  text-align: left;
+  padding-left: 0;
+}
+.step3 p{
+  padding: 0;
+}
+
 }

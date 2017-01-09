@@ -107,6 +107,7 @@ a{
     li{
       +li+li{
         background: none;
+        padding-right: 0;
       }
       padding-right: 61px;
       margin-right: 61px;
@@ -138,6 +139,7 @@ a{
     li{
       +li+li+li+li{
         background: none;
+        padding-right: 0;
       }
       padding-right: 61px;
       margin-right: 61px;
