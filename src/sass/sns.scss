@@ -30,6 +30,9 @@
   background: url(../images/common/tit_back_var.png) 0 -6px repeat-x;
 }
 .sns_box{
+  .hide{
+    display: none;
+  }
   padding: 0 40px;
   li{
     padding: 0 15px;
@@ -99,7 +102,10 @@
   }
 }
 @media (max-width:1024px){
-  .sns_box li{width: 33.33%;}
+  .sns_box li{width: 33.33%; }
+  .sns_wrap{
+    margin-top: 35px;
+  }
 }
 @media (max-width:860px){
 .sns_box li{

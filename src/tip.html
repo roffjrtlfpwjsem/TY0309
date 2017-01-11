@@ -18,21 +18,50 @@
   <script src="js/eventadd.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" charset="utf-8"></script>
   <script type="text/javascript">
+tap_2 = function (e) {
+  e.preventDefault();
+  $(this).attr("class","on")
+  $(".tip2_wrap").show()
+  $(".tip1_wrap").hide()
+  $(".sub_tit li a:first").attr("class","")
+}
+tap_1 = function (e) {
+  e.preventDefault();
+  $(this).attr("class","on")
+  $(".tip1_wrap").show()
+  $(".tip2_wrap").hide()
+  $(".sub_tit li a:last").attr("class","")
+}
+more = function (e) {
+  e.preventDefault();
+  $(".hide").slideToggle();
+  if ($(" a",this).text() == "더보기") {
+    $(" a",this).text("숨기기");
+  }else {
+    $(" a",this).text("더보기");
+  }
+}
   $(function () {
+    $(".top").on("click", function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+    var init = true;
+    // 모바일버전 메뉴클릭
     var init = true;
     $(".menu_box").on("click",function () {
       if (init) {
-        $(".menu_box_wrap").css({
-          "display":"block"
-        })
+        $(".menu_box_wrap").fadeIn();
         init = false;
       }else {
-        $(".menu_box_wrap").css({
-          "display":"none"
-        })
+        $(".menu_box_wrap").fadeOut();
         init = true;
       }
     })
+    $(document).on("click",".sub_tit li a:first",tap_1);
+    $(document).on("click",".sub_tit li a:last",tap_2);
+    $(document).on("click",".more",more);
   });
   </script>
   <title>THE FACE SHOP - Tip</title>
@@ -166,6 +195,27 @@
             </p>
           </li>
         </ul>
+        <ul class="hide">
+          <li>
+            <img src="images/tip/tip_vis4.png" alt="뷰티팁사진4">
+            <h3><a href="#">Dusty Garden Look</a></h3>
+            <p><a href="#">101블렌딩펜슬을 활용한 말린 꽃잎과 나뭇잎을 표현한 깊고 분위기 있는 포니X101 메이크업 룩!</a></p>
+            <p>
+              <a href="#">추천</a>
+              <a href="#">찜</a>
+            </p>
+          </li>
+          <li>
+            <img src="images/tip/tip_vis5.png" alt="뷰티팁사진5">
+            <h3><a href="#">마스카라 레이어드 꿀팁</a></h3>
+            <p><a href="#">두 가지 마스카라를 활용한 두 겹 레이어링 테크닉으로 눈은 두 배 더 커지고 속눈썹 볼륨은 오래오래 살아나요~</a></p>
+            <p>
+              <a href="#">추천</a>
+              <a href="#">찜</a>
+            </p>
+          </li>
+        </ul>
+        <p class="more"><a href="#">더보기</a></p>
       </div>
       <div class="tip2_wrap">
         <ul class="clearboth">
@@ -242,8 +292,34 @@
             </a>
           </li>
         </ul>
+        <ul class="hide clearboth">
+          <li>
+            <a href="#">
+              <img src="images/tip/tip2_13.jpg" alt="뷰티팁리스트사진13">
+              <span>커피한잔의 여유</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/tip/tip2_14.jpg" alt="뷰티팁리스트사진14">
+              <span>사실 전혀 어렵지 않은 머리</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/tip/tip2_15.jpg" alt="뷰티팁리스트사진15">
+              <span>위치 추적 네일 컬러링</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/tip/tip2_16.jpg" alt="뷰티팁리스트사진16">
+              <span>You go girl!</span>
+            </a>
+          </li>
+        </ul>
+        <p class="more"><a href="#">더보기</a></p>
       </div>
-      <p class="more"><a href="#">더보기</a></p>
     </div>
     <footer id="footer">
       <ul class="f_list clearboth">

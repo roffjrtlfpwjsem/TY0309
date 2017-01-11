@@ -19,30 +19,32 @@
   <script src="js/eventadd.js" charset="utf-8"></script>
   <script type="text/javascript">
   $(function () {
-    var init = true;
-    $(".menu_box").on("click",function () {
-      if (init) {
-        $(".menu_box_wrap").css({
-          "display":"block"
-        })
-        init = false;
-      }else {
-        $(".menu_box_wrap").css({
-          "display":"none"
-        })
-        init = true;
-      }
-    })
-    $(".menu li a").on("mouseover focus",function () {
-      var ts = $(this);
-      var gnb = ts.next();
-      gnb.css({"display":"block"});
-    })
-    $(".menu li a").on("mouseleave blur",function () {
-      var ts = $(this);
-      var gnb = ts.next();
-      gnb.css({"display":"none"});
-    })
+    $(".top").on("click", function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+     var init = true;
+     // 모바일버전 메뉴클릭
+     var init = true;
+     $(".menu_box").on("click",function () {
+       if (init) {
+         $(".menu_box_wrap").fadeIn();
+         init = false;
+       }else {
+         $(".menu_box_wrap").fadeOut();
+         init = true;
+       }
+     })
+     //  pc버전 gnb메뉴바
+     $(".menu li a").on("mouseover focus",function () {
+       var ts = $(this);
+       var gnb = ts.next();
+       gnb.slideDown();
+         $(gnb).on("mouseleave blur",function () {
+           gnb.slideUp();
+       })
+     })
   });
   </script>
   <title>THE FACE SHOP - 로그인</title>

@@ -41,7 +41,7 @@
   }
 }
 .step1{
- display: none;
+ display: block;
  width: 70.31%;
  margin: 0 auto;
  .join_idc{
@@ -225,7 +225,7 @@ dl{
    }
  }
  a{
-   display: block;
+   display: none;
    width: 140px;
    height: 40px;
    background: #7993b2;
@@ -239,7 +239,7 @@ dl{
  }
 }
 .step3{
-  display: block;
+  display: none;
   padding-top: 20px;
   width: 80%;
   margin: 0 auto;

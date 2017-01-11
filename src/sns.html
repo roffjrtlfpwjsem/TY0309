@@ -18,22 +18,35 @@
   <script src="js/eventadd.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" charset="utf-8"></script>
   <script type="text/javascript">
-  $(function () {
-    var init = true;
-    $(".menu_box").on("click",function () {
-      if (init) {
-        $(".menu_box_wrap").css({
-          "display":"block"
-        })
-        init = false;
-      }else {
-        $(".menu_box_wrap").css({
-          "display":"none"
-        })
-        init = true;
-      }
+  more = function (e) {
+    e.preventDefault();
+    $(".hide").slideToggle();
+    if ($(" a",this).text() == "더보기") {
+      $(" a",this).text("숨기기");
+    }else {
+      $(" a",this).text("더보기");
+    }
+  }
+   $(function () {
+     $(".top").on("click", function() {
+         $('html, body').animate({
+             scrollTop: 0
+         }, 1000);
+     });
+      var init = true;
+      // 모바일버전 메뉴클릭
+      var init = true;
+      $(".menu_box").on("click",function () {
+        if (init) {
+          $(".menu_box_wrap").fadeIn();
+          init = false;
+        }else {
+          $(".menu_box_wrap").fadeOut();
+          init = true;
+        }
+      })
+      $(document).on("click",".more",more);
     })
-  });
   </script>
   <title>THE FACE SHOP - SNS</title>
 </head>
@@ -174,6 +187,25 @@
                <a href="#"><img src="images/sns/icon_sns_youtube_2_on.png" alt="유튜브"></a>
             </p>
           </li>
+        </ul>
+        <ul class="sns_box hide clearboth">
+          <li>
+            <img src="images/sns/sns_11.png" alt="sns사진11">
+            <a href="#">뽕삘충만.ver 단/독/입/수</a>
+          </li>
+          <li>
+            <img src="images/sns/sns_12.png" alt="sns사진12">
+            <a href="#">#청춘의한방 #예화담</a>
+          </li>
+          <li>
+            <img src="images/sns/sns_13.png" alt="sns사진13">
+            <a href="#">#예화담 #생기순환에센스</a>
+          </li>
+          <li>
+            <img src="images/sns/sns_14.png" alt="sns사진14">
+            <a href="#">#라이언 #한정판 #하우스퍼퓸</a>
+          </li>
+          <li>
         </ul>
         <p class="more"><a href="#">더보기</a></p>
       </div>

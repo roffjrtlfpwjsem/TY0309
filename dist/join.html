@@ -18,31 +18,37 @@
   <script src="js/html5shiv.js" charset="utf-8"></script>
   <script src="js/eventadd.js" charset="utf-8"></script>
   <script type="text/javascript">
+  step1next = function () {
+    alert(123);
+  }
   $(function () {
+    $(".top").on("click", function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+    // 모바일버전 메뉴클릭
     var init = true;
     $(".menu_box").on("click",function () {
       if (init) {
-        $(".menu_box_wrap").css({
-          "display":"block"
-        })
+        $(".menu_box_wrap").fadeIn();
         init = false;
       }else {
-        $(".menu_box_wrap").css({
-          "display":"none"
-        })
+        $(".menu_box_wrap").fadeOut();
         init = true;
       }
     })
+    //  pc버전 gnb메뉴바
     $(".menu li a").on("mouseover focus",function () {
       var ts = $(this);
       var gnb = ts.next();
-      gnb.css({"display":"block"});
+      gnb.slideDown();
+        $(gnb).on("mouseleave blur",function () {
+          gnb.slideUp();
+      })
     })
-    $(".menu li a").on("mouseleave blur",function () {
-      var ts = $(this);
-      var gnb = ts.next();
-      gnb.css({"display":"none"});
-    })
+    // 가입절차이벤트
+    $(".step1 .join_idc li a").on("click",step1next)
   });
   </script>
   <title>THE FACE SHOP - 회원가입절차</title>

@@ -17,22 +17,41 @@
   <script src="js/html5shiv.js" charset="utf-8"></script>
   <script src="js/eventadd.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake-slow.min.css">
   <script type="text/javascript">
+  tap_1 = function (e) {
+    e.preventDefault();
+    $(this).attr("class","on")
+    $(".event_box").show()
+    $(".end").hide()
+    $(".sub_tit li a:last").attr("class","")
+  }
+  tap_2 = function (e) {
+    e.preventDefault();
+    $(this).attr("class","on")
+    $(".end").show()
+    $(".event_box").hide()
+    $(".sub_tit li a:first").attr("class","")
+  }
   $(function () {
+    $(".top").on("click", function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+    // 모바일버전 메뉴클릭
     var init = true;
     $(".menu_box").on("click",function () {
       if (init) {
-        $(".menu_box_wrap").css({
-          "display":"block"
-        })
+        $(".menu_box_wrap").fadeIn();
         init = false;
       }else {
-        $(".menu_box_wrap").css({
-          "display":"none"
-        })
+        $(".menu_box_wrap").fadeOut();
         init = true;
       }
     })
+    $(document).on("click",".sub_tit li a:first",tap_1);
+    $(document).on("click",".sub_tit li a:last",tap_2);
   });
   </script>
   <title>THE FACE SHOP - EVENT</title>
@@ -125,84 +144,84 @@
       <p class="event_tit"><img src="images/event/tit_event.png" alt="이벤트"></p>
       <div class="event_wrap">
         <ul class="event_box clearboth">
-          <li>
+          <li class="shake-slow">
             <a href="#"><img src="images/event/event_1.png" alt="event사진1"></a>
             <p>2016.12.01 ~ 2016.12.31</p>
             <p>(12월) 앱다운 10%쿠폰+핸드크림</p>
           </li>
-          <li>
+          <li class="shake-slow">
             <a href="#"><img src="images/event/event_2.png" alt="event사진2"></a>
             <p>2016.12.05 ~ 2016.12.31</p>
             <p>출시기념 구매 고객 샘플증정!</p>
           </li>
-          <li>
+          <li class="shake-slow">
             <a href="#"><img src="images/event/event_3.png" alt="event사진3"></a>
             <p>2016.11.17 ~ 2016.12.25</p>
             <p>닥터벨머 출시기념 이벤트</p>
           </li>
-          <li>
+          <li class="shake-slow">
             <a href="#"><img src="images/event/event_4.png" alt="event사진4"></a>
             <p>2016.12.21 ~ 2016.12.25</p>
             <p>천삼송이 구매시 천삼 4종키트 증정!</p>
           </li>
-          <li>
+          <li class="shake-slow">
             <a href="#"><img src="images/event/event_5.png" alt="event사진5"></a>
             <p>2016.12.21 ~ 2016.12.25</p>
             <p>회원 대상 할인 최대 50%!</p>
           </li>
-          <li>
+          <li class="shake-slow">
             <a href="#"><img src="images/event/event_6.png" alt="event사진6"></a>
             <p>2016.12.21 ~ 2016.12.31</p>
             <p>캐릭터시트 5장 구매시 5장 더!</p>
           </li>
-          <li>
+          <li class="shake-slow">
             <a href="#"><img src="images/event/event_7.png" alt="event사진7"></a>
             <p>2016.12.21 ~ 2016.12.25</p>
             <p>12월 회원대상 득템쿠폰</p>
           </li>
-          <li>
+          <li class="shake-slow">
             <a href="#"><img src="images/event/event_8.png" alt="event사진8"></a>
             <p>2016.12.22 ~ 2016.12.30</p>
             <p>디즈니 프린세스 홀리데이 이벤트</p>
           </li>
         </ul>
-        <ul class="event_box end clearboth">
-          <li>
+        <ul class="end clearboth">
+          <li class="shake-slow">
             <a href="#"><img src="images/event/end_event_1.png" alt="end_event사진1"></a>
             <p>2016.07.13 ~ 2016.08.24</p>
             <p>마스크시트 Happy Summer Project</p>
           </li>
-          <li>
+          <li class="shake-slow">
             <a href="#"><img src="images/event/end_event_2.png" alt="end_event사진2"></a>
             <p>2016.07.19 ~ 2016.07.24</p>
             <p>수지의 파우치 100명 체험단 모집</p>
           </li>
-          <li>
+          <li class="shake-slow">
             <a href="#"><img src="images/event/end_event_3.png" alt="end_event사진3"></a>
             <p>2016.08.05 ~ 2016.08.08</p>
             <p>8월 멤버십데이 4일의 썸머</p>
           </li>
-          <li>
+          <li class="shake-slow">
             <a href="#"><img src="images/event/end_event_4.png" alt="end_event사진4"></a>
             <p>2016.08.18 ~ 2016.08.21</p>
             <p>Good Bye Summer Festival</p>
           </li>
-          <li>
+          <li class="shake-slow">
             <a href="#"><img src="images/event/end_event_5.png" alt="end_event사진5"></a>
             <p>2016.09.08 ~ 2016.09.13</p>
             <p>추석맞이! 9월 멤버십데이</p>
           </li>
-          <li>
+          <li class="shake-slow">
             <a href="#"><img src="images/event/end_event_6.png" alt="end_event사진6"></a>
             <p>2016.09.30 ~ 2016.10.05</p>
             <p>10월 멤버십데이 세일</p>
           </li>
-          <li>
+          <li class="shake-slow">
             <a href="#"><img src="images/event/end_event_7.png" alt="end_event사진7"></a>
             <p>2016.10.29 ~ 2016.11.02</p>
             <p>11월 멤버십데이 세일</p>
           </li>
-          <li>
+          <li class="shake-slow">
             <a href="#"><img src="images/event/end_event_8.png" alt="end_event사진8"></a>
             <p>2016.11.29 ~ 2016.12.04</p>
             <p>12월 멤버십데이 세일</p>

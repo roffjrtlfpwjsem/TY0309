@@ -93,6 +93,10 @@
                 top: 30px;
                 right: 20px;
               }
+              &:hover{
+                background: #b68957;
+                color: #fff;
+              }
               display: block;
               width: 58px;
               height: 23px;
@@ -116,7 +120,7 @@
       }
     }
     float: right;
-    width: 25.78%;
+    width: 32%;
     max-height: 600px;
     overflow: hidden;
     overflow-y: scroll;

@@ -19,17 +19,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" charset="utf-8"></script>
   <script type="text/javascript">
   $(function () {
+    $(".top").on("click", function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
     var init = true;
     $(".menu_box").on("click",function () {
       if (init) {
-        $(".menu_box_wrap").css({
-          "display":"block"
-        })
+        $(".menu_box_wrap").fadeIn();
         init = false;
       }else {
-        $(".menu_box_wrap").css({
-          "display":"none"
-        })
+        $(".menu_box_wrap").fadeOut();
         init = true;
       }
     })

@@ -30,6 +30,10 @@
     }
     li{
       a{
+        &:hover,&:focus{
+          background: #b68957;
+          color: #fff;
+        }
       position: absolute;
       bottom: 0;
       left: 50%;
@@ -55,11 +59,17 @@
         max-height:63px;
         overflow:hidden;
       }
-      img+img{
-        display: block;
-        margin: 0 auto;
-        padding-top: 30px;
-        padding-bottom: 50px;
+      img{
+        &:hover,&:focus{
+        filter:brightness(110%);
+        }
+        +img{
+          transition: none;
+          display: block;
+          margin: 0 auto;
+          padding-top: 30px;
+          padding-bottom: 50px;
+        }
       }
       width: 33.3333%;
       height: 560px;
@@ -129,6 +139,9 @@
 }
 .best_wrap ul .last div{
   width: 100%;
+}
+.best_wrap{
+  margin-top: 35px;
 }
 }
 @media (max-width:860px){

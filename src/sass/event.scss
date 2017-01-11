@@ -52,12 +52,11 @@
   background: url(../images/common/tit_back_var.png) 0 -4px repeat-x;
 }
 }
-
-.event_box{
+.end{
+  display: none;
+}
+.event_box, .end{
   padding: 0 40px;
-  +.end{
-    display: block;
-  }
 li{
   padding:15px;
   width: 25%;
@@ -108,18 +107,18 @@ li{
     }
   }
 }
-.event_box li{
+.event_box li,.end li{
    width: 33.33%;
    margin: 0;
 }
-.event_box li p+p{margin-top: 15px;}
+.event_box li p+p,.end li p+p{margin-top: 15px;}
 }
 @media (max-width:860px) {
-.event_box li{
+.event_box li,.end li{
 width: 50%;
 text-align: center;
 }
-.event_box li p{
+.event_box li p,.end li p{
   font-size: 16px;
 }
 }
@@ -128,10 +127,10 @@ text-align: center;
   text-align: center;
   padding: 0;
 }
-.event_box li{
+.event_box li,.end li{
 width: 100%;
 }
-.event_box li p{
+.event_box li p,.end li p{
   font-size: 14px;
 }
 }
