@@ -34,7 +34,7 @@ tap_1 = function (e) {
 }
 more = function (e) {
   e.preventDefault();
-  $(".hide").slideToggle();
+  $(".hide").slideToggle(1000);
   if ($(" a",this).text() == "더보기") {
     $(" a",this).text("숨기기");
   }else {

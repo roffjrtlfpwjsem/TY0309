@@ -34,6 +34,7 @@
           background: #b68957;
           color: #fff;
         }
+        transition: all 0.5s;
       position: absolute;
       bottom: 0;
       left: 50%;
@@ -63,8 +64,7 @@
         &:hover,&:focus{
         filter:brightness(110%);
         }
-        +img{
-          transition: none;
+        +img{        
           display: block;
           margin: 0 auto;
           padding-top: 30px;

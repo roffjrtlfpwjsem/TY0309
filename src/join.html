@@ -17,10 +17,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" charset="utf-8"></script>
   <script src="js/html5shiv.js" charset="utf-8"></script>
   <script src="js/eventadd.js" charset="utf-8"></script>
+  <script src="js/join.js" charset="utf-8"></script>
   <script type="text/javascript">
-  step1next = function () {
-    alert(123);
-  }
   $(function () {
     $(".top").on("click", function() {
         $('html, body').animate({
@@ -48,7 +46,10 @@
       })
     })
     // 가입절차이벤트
-    $(".step1 .join_idc li a").on("click",step1next)
+    $(".join_idc li a").on("click",step1next);
+    $("#join_ck").on("click",allck);
+    $(".step2ck").on("click",step2next);
+    $(".submit button").on("click",step3next);
   });
   </script>
   <title>THE FACE SHOP - 회원가입절차</title>
@@ -199,7 +200,7 @@
       <h3>서비스 이용약관</h3>
       <p class="sub_ck_box">
         <input type="checkbox" id="join_ck_1" title="동의체크박스">
-        <label for="join_ck_1">동의</label>
+        <label for="join_ck_1" tabindex="0">동의</label>
       </p>
       <div class="txt_box">
         <h4>제1조 목적</h4>
@@ -303,10 +304,10 @@
     </ul>
    </div>
   </div>
-  <a href="#">확인</a>
+  <a href="#" class="step2ck">확인</a>
  </div>
  <div class="step3">
-  <form class="join" action="#.php" method="post">
+  <form class="join" action="" method="post">
     <fieldset>
       <legend>회원가입 양식</legend>
       <h3>필수항목</h3>
@@ -384,7 +385,7 @@
         <option value="30">30</option>
         <option value="31">31</option>
       </select>
-      <input type="radio" title="양력" id="plus_radio" name="radio_icon">
+      <input type="radio" title="양력" id="plus_radio" name="radio_icon" checked="checked">
       <label for="plus_radio">양력</label>
       <input type="radio" title="음력" id="minus_radio" name="radio_icon">
       <label for="minus_radio">음력</label>

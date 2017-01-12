@@ -343,6 +343,11 @@ a{
     }
   p+ul{
     li a{
+      &:hover{
+        background: #f4f4f4;
+        color: #494037;
+      }
+      transition: all 0.5s;
       display: block;
       width: 240px;
       font-size: 15px;

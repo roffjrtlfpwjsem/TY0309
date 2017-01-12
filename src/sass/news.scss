@@ -39,6 +39,14 @@
       height: 55px;
       border-bottom: 1px solid #e1e4e8;
       td{
+        +td{
+          +td{
+            padding: 0;
+            text-align: center;
+          }
+          padding-left: 100px;
+          text-align: left;
+        }
         text-align: center;
         color: #737373;
         font-size: 14px;
@@ -104,6 +112,9 @@
   select{
     display: none;
   }
+  .news_wrap table tbody tr td+td{
+    padding-left: 20px;
+  }
   .select{
    width: 250px;
    input{
@@ -117,6 +128,9 @@
   }
 }
 @media (max-width:480px){
+  .news_wrap table tbody tr td+td{
+    padding: 0 10px;
+  }
   .news_wrap h2{
     text-align:center;
     padding-right: 0;

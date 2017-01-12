@@ -97,7 +97,7 @@
       font-size: 22px;
       text-align: center;
       padding: 16.32% 20px 10.2% 20px;
-      a{
+      a{  
         position: absolute;
         bottom: 12%;
         left: 50%;
@@ -117,11 +117,11 @@
 .ad{
   margin-top: 50px;
   .ad_left{
-    width: 55%;
+    width: 60%;
     float: left;
   }
   .ad_right{
-    width: 45%;
+    width: 40%;
     float: left;
   }
   .ad_movie{
@@ -142,7 +142,7 @@
       float: left;
       width: 50%;
       padding-left: 35px;
-      padding-top: 28px;
+      padding-top: 20px;
       li{
         color: #422d22;
         font-size: 14px;
@@ -155,10 +155,10 @@
           a{
             color: #333333;
           }
-          padding-bottom: 25px;
+          padding-bottom: 20px;
           +li{
             font-size: 12px;
-            padding-bottom: 20px;
+            padding-bottom: 15px;
             a{
               color: black;
               }

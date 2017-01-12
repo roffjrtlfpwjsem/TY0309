@@ -21,10 +21,12 @@
   padding-bottom: 40px;
   .on{
     color: #6d9811;
-    background: none;
     border-bottom: 3px solid #6d9811;
   }
   li{
+    &:first-child{
+      background: none;
+    }
     border-bottom: 1px solid #d4d4d7;
     color: #737373;
     font-size: 18px;
@@ -225,7 +227,7 @@ dl{
    }
  }
  a{
-   display: none;
+   display: block;
    width: 140px;
    height: 40px;
    background: #7993b2;

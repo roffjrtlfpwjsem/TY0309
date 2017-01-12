@@ -18,9 +18,60 @@
   <script src="js/eventadd.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" charset="utf-8"></script>
   <script type="text/javascript">
-  scroll = function () {
-   var year = $(this).text();
-   
+  var sctBoolean = false;
+  var oldScroll = null;
+  position = function () {
+      var ts = $(this);
+      var wraptop = $(".left_year").offset()
+      var windowscoll = $(this).scrollTop()
+      if(oldScroll) {
+        if(windowscoll<281 && windowscoll < oldScroll && sctBoolean) {
+          sctBoolean = !sctBoolean;
+          $(".left_year").css({
+            position:"absolute",
+            "padding-top":90
+          });
+        } else if(!sctBoolean) {
+          sctBoolean = !sctBoolean;
+        }
+      }
+      oldScroll = windowscoll;
+}
+  scroll = function (e) {
+    e.preventDefault();
+    var ts = $(this);
+    var year = ts.text();
+    var wrap = $(".left_year")
+    wrap.animate({"padding-top":30}).css({"position":"fixed"})
+    if (year==2003) {
+      $('html, body').animate({scrollTop: 300+"px"}, 1000);
+    }else if (year==2004) {
+      $('html, body').animate({scrollTop: 600+"px"}, 1000);
+    }else if (year==2005) {
+      $('html, body').animate({scrollTop: 950+"px"}, 1000);
+    }else if (year==2006) {
+      $('html, body').animate({scrollTop: 1500+"px"}, 1000);
+    }else if (year==2007) {
+      $('html, body').animate({scrollTop: 1900+"px"}, 1000);
+    }else if (year==2008) {
+      $('html, body').animate({scrollTop: 2150+"px"}, 1000);
+    }else if (year==2009) {
+      $('html, body').animate({scrollTop: 2450+"px"}, 1000);
+    }else if (year==2010) {
+      $('html, body').animate({scrollTop: 2780+"px"}, 1000);
+    }else if (year==2011) {
+      $('html, body').animate({scrollTop: 3230+"px"}, 1000);
+    }else if (year==2012) {
+      $('html, body').animate({scrollTop: 3600+"px"}, 1000);
+    }else if (year==2013) {
+      $('html, body').animate({scrollTop: 3850+"px"}, 1000);
+    }else if (year==2014) {
+      $('html, body').animate({scrollTop: 4300+"px"}, 1000);
+    }else if (year==2015) {
+      $('html, body').animate({scrollTop: 5950+"px"}, 1000);
+    }
+    ts.closest(".left_year").find(".on").removeClass();
+    $(this).attr("class","on");
   }
   // top이동
   $(function () {
@@ -41,6 +92,7 @@
       }
     })
     $(document).on("click",".left_year li a",scroll)
+    $(window).on("scroll",position)
   });
   </script>
   <title>THE FACE SHOP - History</title>
@@ -127,7 +179,7 @@
     <div class="history_wrap">
       <h2><a href="index.html">HOME</a> &gt; BRAND &gt; <a href="history.html">History</a></h2>
     <ul class="left_year">
-      <li><a href="#">2003</a></li>
+      <li><a href="#" class="on">2003</a></li>
       <li><a href="#">2004</a></li>
       <li><a href="#">2005</a></li>
       <li><a href="#">2006</a></li>
