@@ -30,6 +30,7 @@
   background: url(../images/common/tit_back_var.png) 0 -9px repeat-x;
 }
 .find_select{
+  position: relative;
   width: 93.75%;
   height: 110px;
   background: #f6f6f6;
@@ -60,15 +61,17 @@
     margin-left: 10px;
     line-height:34px;
   }
-  button{
-    margin-left: -6px;
-    vertical-align: middle;
-    width: 79px;
-    height: 34px;
-    background: #696a6c;
-    color: #fff;
-    font-size: 16px;
-    border: none;
+    a{
+      vertical-align: middle;
+      background: #696a6c;
+      width: 79px;
+      height: 34px;
+      margin-left: -6px;
+      display: inline-block;
+      line-height: 34px;
+      border: none;
+      color: #fff;
+      font-size: 16px;
   }
 }
 .map{
@@ -169,8 +172,9 @@ margin-bottom: 30px;
   display: block;
 }
 .find_select input{
-  width: 80%;
+  width: 100%;
   margin: 0;
+  padding-right: 90px;
 }
 .find_select button{
   width: 20%;
@@ -181,6 +185,11 @@ margin-bottom: 30px;
 .find_select{
   line-height: 40px;
   height: 73px;
+}
+.find_select a{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 }
 @media (max-width:480px) {

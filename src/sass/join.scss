@@ -135,11 +135,11 @@ dl{
         }
         label{
           cursor: pointer;
-          padding:2px 30px 2px 0;
-          background: url(../images/join/bg_chkbox.png) right 4px no-repeat;
+          padding:0 30px 5px 0;
+          background: url(../images/join/bg_chkbox.png) right 2px no-repeat;
         }
         input[type="checkbox"]:checked + label {
-          background-position-y: -19px;
+          background-position-y: -21px;
         }
     }
  div{
@@ -180,7 +180,7 @@ dl{
        font-size: 14px;
        font-weight: bold;
        cursor: pointer;
-       padding:2px 30px 2px 0;
+       padding:2px 30px 5px 0;
        background: url(../images/join/bg_chkbox.png) right 4px no-repeat;
      }
      input[type="checkbox"]:checked + label {
@@ -208,6 +208,10 @@ dl{
      tbody{
        tr{
          td{
+           &:first-child{
+             width: 10%;
+           }
+           width: 30%;
            font-size: 14px;
            color: #737373;
            text-align: center;
@@ -426,8 +430,8 @@ dl{
 width: 100%;
 margin-bottom: 10px;
 }
-.step2 .table_box,.step2 .table_box{
-  min-width: 440px;
+.step2 .table_box,.step2 .table_box,.txt_box{
+  display: none;
 }
 .step4 p{
   font-size: 16px;
@@ -459,5 +463,4 @@ margin-bottom: 10px;
 .step3 p{
   padding: 0;
 }
-
 }

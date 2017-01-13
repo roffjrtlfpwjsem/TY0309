@@ -1,1 +1,49 @@
 @charset "UTF-8";
+#wrap{
+  min-width: 1280px;
+}
+.step2 .all_ck{
+  position: relative;
+  text-align: center;
+  input[type='checkbox']{
+    display: inline;
+  }
+  label{
+    background: none;
+    padding: 0;
+    cursor: none;
+  }
+}
+.step2 div .sub_ck_box{
+  input[type="checkbox"]{
+    display: inline;
+  }
+  label{
+    background: none;
+    padding: 0;
+    cursor: none;
+  }
+}
+.step3 .ad{
+  width: 530px;
+}
+.step3 p{
+  input[type='radio']{
+    display: inline;
+    +label{
+      background: none;
+      padding: 0;
+      cursor: none;
+    }
+  }
+}
+.login_box .box2{
+  input[type='checkbox']{
+    display: inline;
+    +label{
+      background: none;
+      padding: 0;
+      cursor: none;
+    }
+  }
+}

@@ -8,36 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/common.css" type="text/css">
-  <link rel="stylesheet" href="css/grid12.css" type="text/css">
   <link rel="stylesheet" href="css/findstore.css" type="text/css">
   <link rel="shortcut icon" href="images/common/favicon.ico">
   <!--[if lte IE 8]>
   <link rel="stylesheet" href="css/ie8.css" type="text/css">
   <![endif]-->
+  <script src="js/1.9.1jquery.min.js" charset="utf-8"></script>
   <script src="js/html5shiv.js" charset="utf-8"></script>
-  <script src="js/eventadd.js" charset="utf-8"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" charset="utf-8"></script>
-  <script type="text/javascript">
-  $(function () {
-    $(".top").on("click", function() {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 1000);
-    });
-    // 모바일버전 메뉴클릭
-    var init = true;
-    $(".menu_box").on("click",function () {
-      if (init) {
-        $(".menu_box_wrap").fadeIn();
-        init = false;
-      }else {
-        $(".menu_box_wrap").fadeOut();
-        init = true;
-      }
-    })
-  });
-  </script>
-  <title>THE FACE SHOP - History</title>
+  <script src="js/top.js" charset="utf-8"></script>
+  <script src="js/m_menu.js" charset="utf-8"></script>
+  <title>THE FACE SHOP - FindStore</title>
 </head>
 <body>
   <div id="wrap">
@@ -145,7 +125,7 @@
       	</select>
         <label for="f_address">주소</label>
         <input type="text" id="f_address">
-        <button>검색</button>
+        <a href="#">검색</a>
       </p>
       <div class="map clearboth">
 <div id="daumRoughmapContainer1483950425777" class="root_daum_roughmap root_daum_roughmap_landing"></div>
@@ -250,7 +230,7 @@
     </footer>
   </div>
   <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
-  <script charset="UTF-8">
+  <script>
   	new daum.roughmap.Lander({
   		"timestamp" : "1483950425777",
   		"key" : "f9um",

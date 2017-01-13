@@ -29,10 +29,10 @@
   margin-bottom: 130px;
   background: url(../images/common/tit_back_var.png) 0 -6px repeat-x;
 }
+.sns_box.hide{
+  display: none;
+}
 .sns_box{
-  .hide{
-    display: none;
-  }
   padding: 0 40px;
   li{
     padding: 0 15px;
@@ -67,24 +67,33 @@
     }
   }
   .sns_icon{
+    p{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -15px;
+      margin-left: -85px;
+      padding: 0;
+      width: 170px;
+    }
+    position: relative;
     width: 100%;
     background: #f6f6f6;
     height: 160px;
-    padding: 45px 27% 0 27%;
+    padding: 0;
     a{
-      +a+a+a{
-        +a{
-          margin: 0;
-        }
-        margin-left: 16%;
-      }
       &:hover,&:focus{
         background: none;
       }
-      width: 33.33%;
-      height: 40%;
+      margin-left: 5px;
+      width: 30px;
+      height: 30px;
+      background: none;
       padding: 0;
       float: left;
+      &:first-child{
+        margin: 0;
+      }
     }
  }
 }
