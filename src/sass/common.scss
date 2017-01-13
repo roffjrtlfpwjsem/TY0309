@@ -145,14 +145,14 @@ a{
     height: 60px;
     width: 100%;
     background: #715c49;
-    padding-left: 240px;
+    padding-left: 300px;
     li{
       +li+li+li+li{
         background: none;
         padding-right: 0;
       }
-      padding-right: 61px;
-      margin-right: 61px;
+      padding-right: 43px;
+      margin-right: 43px;
       background: url(../images/common/sp_bar1.png) right 50% no-repeat;
       a{
         &:hover{
