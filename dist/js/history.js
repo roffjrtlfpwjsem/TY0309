@@ -18,8 +18,10 @@ position = function () {
     oldScroll = windowscoll;
     if (windowscoll>281) {
       $(".left_year").css({
-        position:"fixed",
-        "padding-top":30
+        "position":"fixed",
+        "padding-top":30+"px",
+        "margin-left":-650+"px",
+        "left":50+"%"
       });
     }else {
       $(".left_year").find(".on").removeClass();
